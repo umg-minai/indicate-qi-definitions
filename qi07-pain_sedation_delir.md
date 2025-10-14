@@ -100,6 +100,7 @@ period.
 Should be 1 (pain, sedation and delirium assessed) or 0 (failure) for
 an 8-hour shift period.
 
+```
 (
     - At least one assessment of pain.
     AND
@@ -130,6 +131,7 @@ AND
         - It has to be one of CAM-ICU, 3D-CAM, 4AT, DOS, DRS, NU-DESC, DDS,
           ICDSC
 )
+```
 
 The numerator is the sum of the results above for each 8-hour shift period.
 

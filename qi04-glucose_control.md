@@ -98,6 +98,7 @@ period.
 
 A successful glucose control for an 8-hour shift period is defined as:
 
+```
 - At least one measurement in an 8-hour shift period.
 AND
 - All measurements have to fulfill the following rules:
@@ -127,6 +128,7 @@ AND
             )
         )
     )
+```
 
 The numerator is the sum of the results above for each 8-hour shift period.
 

@@ -73,10 +73,13 @@ c) estimated using a formula.
 
 The calorie target depends on the body-mass-index (BMI) of the patient.
 
+```
 BMI = body weight [kg] / (body height [m])^2
+```
 
 The initial calorie target (ICT) is calculate as follows:
 
+```
 initial calorie target [kcal/d] =
     IF indirect calorimetry THEN
         IF BMI < 30 THEN
@@ -100,6 +103,7 @@ initial calorie target [kcal/d] =
     ELSE (BMI > 50)
         - 24 kcal/d/kg body weight (ideal body weight):
             24 kcal/d/kg * (48.4 + 77 * (body height [m] - 1.5))
+```
 
 The calorie target is adjusted by the insulin requirement and phosphate
 measurements on a daily basis [see Eike et al. 2019, fig. 3 and 4].
@@ -118,6 +122,7 @@ If phosphate measurements are above 0.65 mmol/L, insulin-based changes
 should be applied.
 The calorie target must not be adjusted below zero or above the ICT.
 
+```
 CTD0 (calorie target day 0): 0 [first 24 hours are ignored]
 CTD1: 0.75 * ICT
 CTDi:
@@ -134,6 +139,7 @@ CTDi:
     ELSE IF maximum insulin dose on Day (i - 1) > 4 IE/h
         AND CTD(i-1) > 0
         CTD(i-1) - 0.5 * ICT
+```
 
 A day is not defined as midnight-to-midnight but is a full 24-hour period
 that starts at the time of admission to the intensive care unit.
@@ -154,7 +160,9 @@ period.
 For each 24 hour period starting at admission + 24 hours the calorie intake has
 to be 10 % lower/higher than the individualised daily calorie target.
 
+```
 calorie intake >= 0.9 * CTDi AND calorie intake =< 1.1 * CTDi
+```
 
 
 ## Numerator Exclusion
