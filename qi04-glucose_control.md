@@ -102,6 +102,7 @@ A successful glucose control for an 8-hour shift period is defined as:
 AND
 - All measurements have to fulfill the following rules:
     - The previous blood glucose measurement was taken less than 10 hours ago.
+        (except for the very first measurement of each patient)
     AND
     (
         - The blood glucose level is within the acceptable range.
@@ -126,6 +127,8 @@ AND
             )
         )
     )
+
+The numerator is the sum of the results above for each 8-hour shift period.
 
 
 ## Numerator Exclusion
