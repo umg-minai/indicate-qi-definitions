@@ -54,12 +54,6 @@ Early nutrition starts within 24 to 48 hours of admission on the intensive care
 unit.
 We count the first enteral calorie intake.
 
-// Contraindications missing:
-- shock - we could use the ((nor-)epinephrine dose?,
-- acidosis (we could use the pH)
-- upper gastrointestinal bleeding (not part of the minimal dataset)?
-- ileus (not part of the minimal dataset)?
-
 ### Calorie Target
 
 Daily required calories.
@@ -188,10 +182,19 @@ First 24 hours and incomplete last 24 hour period.
 A higher ratio indicates improvement.
 
 
-## Comments
+## References
 
 Stapel et al. Critical Care (2015) 19:370
 DOI 10.1186/s13054-015-1087-2
 
 Elke et al.
 DGEM-Leitlinie: „Klinische Ernährung in der Intensivmedizin“
+
+
+## Comments
+
+// Contraindications missing:
+- shock - we could use the ((nor-)epinephrine dose?,
+- acidosis (we could use the pH)
+- upper gastrointestinal bleeding (not part of the minimal dataset)?
+- ileus (not part of the minimal dataset)?
