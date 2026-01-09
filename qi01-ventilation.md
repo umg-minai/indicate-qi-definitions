@@ -101,9 +101,13 @@ PEEP |   5 |  14 |  16 |  20 |  22
 
 ### Ideal Body Weight
 
-based on the Devine formula:
+We calculate the ideal body weight (IBW) based on the Devine formula:
 - women: IBW = 45.5 [kg] + 0.91 [kg] * (body height [cm] - 152.4)
 - men:   IBW = 50 [kg] + 0.91 [kg] * (body height [cm] - 152.4)
+
+The IBW is calculated once for each patient and used for all
+calculations.
+If multiple body height entries are given we chose the most recent one.
 
 ### Ventilation modes
 
