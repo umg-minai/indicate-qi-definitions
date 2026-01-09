@@ -80,21 +80,23 @@ The PEEP values will sometimes differ from the values in the table, e.g. PEEP =
 
 We would assume the PEEP as adequate if it is at least the value listed in the
 tables below for a given FiO2.
+The tables are based on the ARDS-network PEEP tables and simplified to the
+lowest PEEP for each FiO2.
 
-For the FiO2 we choose the next lowest entry, e.g. 0.3 for 0.39.
+For the FiO2 we look up the next lowest entry in the table, e.g. 0.3 for 0.39.
+
 
 #### low PEEP table
 
-FiO2 | 0.3 | 0.4 | 0.4 | 0.5 | 0.5 | 0.6 | 0.7 | 0.7 | 0.7 | 0.8 | 0.9 | 0.9 | 0.9 | 1.0
-------------------------------------------------------------------------------------------
-PEEP |   5 |   5 |   8 |   8 |  10 |  10 |  10 |  12 |  14 |  14 |  14 |  16 |  18 | 18-24
-
+FiO2 | 0.3 | 0.5 | 0.6 | 0.8 | 1.0
+----------------------------------
+PEEP |   5 |   8 |  10 |  14 |  18
 
 #### high PEEP table
 
-FiO2 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0.4 | 0.5 | 0.5 | 0.5-0.8 | 0.8 | 0.9 | 1.0 | 1.0
---------------------------------------------------------------------------------------------
-PEEP |   5 |   8 |  10 |  12 |  14 |  14 |  16 |  16 |  18 |      20 |  22 |  22 |  22 |  24
+FiO2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.9
+----------------------------------
+PEEP |   5 |  14 |  16 |  20 |  22
 
 
 ### Ideal Body Weight
