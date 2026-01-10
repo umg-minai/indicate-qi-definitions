@@ -159,6 +159,8 @@ Pdelta = Pplat - PEEP
 We assume that the ventilator settings and measurements are reported at least
 hourly.
 
+If the PaO2/FiO2 ratio is not available it has to be calculated as follows:
+
 The PaO2 is measured irregulary in an arterial blood gas analysis.
 We assume that ventilated patients have a blood gas analysis every 4-6 hours.
 The last PaO2 has to be taken for the calculation of PaO2/FiO2 ratio
@@ -168,9 +170,15 @@ If it is missing or older than 6 hours we assume a mild ARDS.
 The recommended PEEP has to be chosen as follows:
 ```
 PEEPtable:
-    IF PaO2 is older than 6 hours OR LOCF(PaO2)/FiO2 > 200
+    IF PaO2/FiO2 is not given AND PaO2 was taken less than 6 hours before
+current timepoint
+        PaO2/FiO2 = LOCF(PaO2)/FiO2
+    ELSE IF PaO2/FiO2 is not given AND PaO2 is missing or older than 6 hours
+        PaO2/FiO2 = 300
+
+    IF PaO2/FiO2 > 200
         low PEEP table
-    ELSE IF LOCF(PaO2)/FiO2 > 100
+    ELSE
         high PEEP table
 
 recommended PEEP:
