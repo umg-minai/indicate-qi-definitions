@@ -112,6 +112,10 @@ If phosphate measurements are above 0.65 mmol/L, insulin-based changes
 should be applied.
 The calorie target must not be adjusted below zero or above the ICT.
 
+If the insulin is not applied continuously
+the "maximum insulin dose" is equivalent to
+the sum of all give international units [IE] of insulin derivates per 24 h period divided by 24 h (equals the mean insule dose per hour).
+
 ```
 CTD0 (calorie target day 0): 0 [first 24 hours are ignored]
 CTD1: 0.75 * ICT
