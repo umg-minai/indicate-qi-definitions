@@ -56,6 +56,7 @@ that starts at the beginning of mechanical ventilation.
 The last period before end of ventilation is ignored if it
 is less than 24 hours.
 
+
 ## Initial Population
 
 All critically ill patients that are 18 years or older
