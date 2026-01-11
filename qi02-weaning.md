@@ -43,12 +43,8 @@ None.
 ## Definitions
 
 There is not a international definition of spontaneus breathing trial.
-We define it as follows:
-- Disconnected from the ventilator (e.g. T-piece / T-tube)
-- CPAP (continuous positive airway pressure) with a
-PEEP (positive end expiratory pressure) of 6 cmH2O or less and a pressure support (PS) of 7 cmH2O or less.
 
-both for at least 5 min (if the resolution of the ventilation data is high enough, otherwise the smallest difference in time that is larger than 5 min)
+We expect a "Trial of spontaneous breathing" entry.
 
 Alternatively the spontaneus breathing trial could be defined by an entry:
 "Trial of spontaneous breathing".
@@ -75,10 +71,6 @@ mechanical ventilation there should be at least one period
 with
 
 "Trial of spontaneous breathing"
-OR
-(Ventilation mode == "CPAP" for >= 5 [min]
-    AND PEEP <= 6 [cmH2O]
-    AND PS <= 7 [cmH2O])
 OR
 (Extubation OR no mechanical ventilation for >= 5 [min])
 
