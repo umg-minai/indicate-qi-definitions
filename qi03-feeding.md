@@ -62,6 +62,52 @@ calorimetry (gold standard) or alternatively via carbon dioxide production rate
 or calculation by a formula.
 It is reached if the intaken calories are 10 % less or more than the target.
 
+## Mapping
+
+athena concept ids
+
+body height [cm]:
+- 607590
+
+body weight [kg]:
+- 4099154
+
+IBW:
+- 40308117
+
+Energy requirement [cal]:
+- 4022415
+
+Contraindication to enteral feeding:
+- 4141768
+
+Calorie intake total 24 hour [cal]:
+- 3026267
+
+Renal replacement therapy, could be one of:
+- 4051330 (continuous venovenous hemofiltration)
+- 4051329 (continuous venovenous hemodialysis)
+- 4049846 (continuous venovenous hemodiafiltration)
+- 4051326 (intermittent hemodialysis)
+
+Phosphate:
+- 3003458 (serum)
+- 3018913 (blood)
+
+insulin [IE], could be one of:
+- 35198096 (insulin aspart)
+- 1544838 (insulin glulisine, human)
+- 1567198 (insulin aspart, human)
+- 1516976 (insulin detemir)
+- 35602717 (insulin degludec)
+
+Calorie intake total:
+- 3007882
+
+@NOTE: @Jan maybe we have to redefine our 24 h period if the calorie intake
+counter is reset at a given time (e.g. every morning at 6:00)
+Calorie intake total 24 hour:
+- 3026267
 
 ## Guidance
 
@@ -171,8 +217,9 @@ Number of 24 hour periods.
 
 ## Denominator Exclusion
 
-First 24 hours and incomplete last 24 hour period.
-
+First 24 hours and incomplete last 24 hour period
+OR
+Contraindication to enteral feeding
 
 ## Expected
 
