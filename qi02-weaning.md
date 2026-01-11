@@ -46,8 +46,24 @@ There is not a international definition of spontaneus breathing trial.
 
 We expect a "Trial of spontaneous breathing" entry.
 
-Alternatively the spontaneus breathing trial could be defined by an entry:
-"Trial of spontaneous breathing".
+
+## Mapping
+
+intubated (tube present):
+- 4097216
+
+invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
+- 37158404
+
+invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
+- 37158404
+
+trial of spontaneous breathing:
+- 4308797
+
+extubation
+- 4148972 (normal)
+- 4231838 (inadvertent)
 
 ## Guidance
 
