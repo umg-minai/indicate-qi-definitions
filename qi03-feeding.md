@@ -66,10 +66,10 @@ It is reached if the intaken calories are 10 % less or more than the target.
 ## Guidance
 
 The calorie target should be
-a) measured by indirect calorimetry - in that case the value should be used.
-b) continuously estimated by the carbon dioxide production rate measured by the
-ventilator - the median of the last 24 hours should be used.
-c) estimated using a formula.
+a) The `minimal_dataset` defines an "energy requirement" item which should be
+used if available (may be based on indirect calorimetry, carbon dioxide
+production rate or formulas).
+b) estimated using a formula.
 
 The calorie target depends on the body-mass-index (BMI) of the patient.
 
@@ -81,18 +81,8 @@ The initial calorie target (ICT) is calculate as follows:
 
 ```
 initial calorie target [kcal/d] =
-    IF indirect calorimetry THEN
-        IF BMI < 30 THEN
-        - measurement value of indirect calorimetry
-        ELSE
-        - 60 % of measurement value of indirect calorimetry
-    ELSE IF carbon dioxide production rate
-        IF BMI < 30 THEN
-        - median of the carbon dioxide production rate in ml/min:
-            VCO2 [ml/min] * 8.19
-        ELSE
-        - 60 % of median of the carbon dioxide production rate in ml/min:
-            VCO2 [ml/min] * 8.19 * 0.6
+    IF Energy requirement is available THEN
+        Energy requirement
     ELSE
         IF BMI < 30 THEN
         - 24 kcal/d/kg body weight (actual body weight):
