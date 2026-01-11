@@ -76,6 +76,18 @@ acceptable range or the next one is at least 20 % higher/lower
 (e.q. closer to the acceptable range).
 
 
+## Mapping
+
+athena concept ids
+
+Glucose levels [g/l], could be one of:
+- 3004501 (serum)
+- 3000483 (blood)
+- 3033408 (venous blood)
+- 1092148 (mixed venous blood)
+- 3034962 (capillary blood)
+
+
 ## Guidance
 
 We expect SI units.
