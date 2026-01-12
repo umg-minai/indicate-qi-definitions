@@ -88,6 +88,30 @@ Delirium is assessed with the following scores:
 - DDS (Delirium Detection Score)
 - ICDSC (Intensive Care Delirium Screening Checklist score)
 
+We are not interested in the value of these assessment.
+It is just important that these assessments were done at a given time point.
+
+## Mapping
+
+athena concept ids
+
+GCS:
+- 4093836
+
+RASS:
+- 36684829
+
+RSS:
+- 4105091
+
+NRS:
+- 37151627
+
+VAS:
+- 4165600
+
+@TODO: IDs for delirium scores are missing in the `minimal_dataset.xlsx`
+
 
 ## Initial Population
 
