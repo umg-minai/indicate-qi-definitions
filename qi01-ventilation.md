@@ -162,6 +162,9 @@ Pdelta = Pplat - PEEP
 
 athena concept ids
 
+If more than one concepts are available at a specific time points the one with
+the highest priority (lowest number) should be used.
+
 body height [cm]:
 - 607590
 
@@ -187,28 +190,29 @@ PaO2/FiO2:
 - 3029943
 
 PaO2:
-- 3027801 (default)
-- 3022803 (temperature adjusted)
+1. 3027801 (default)
+2. 3022803 (temperature adjusted)
 
 FiO2:
 - 4353936
 
 PEEP:
-- 4353713 (measurement, should be favoured)
-- 4216746 (setting, if 4353713 is not available)
+1. 42527140 (total, measured)
+2. 4216746 (setting)
+3. 4353713 (general, no information about setting/measurement)
 
 Pplat:
 - 44782825
 
 Pinsp:
-- 4215838 (inpiratory pressure setting [cmH2O])
-- 4101694 (peak inspiratory pressure [mmHg], CAVE different units, has to be converted to [cmH2O])
+1. 4215838 (inpiratory pressure setting [cmH2O])
+2. 4101694 (peak inspiratory pressure [mmHg], CAVE different units, has to be converted to [cmH2O])
 
 VT:
-- 4029625 (measurement)
-- 3012410 (setting)
-- 4108448 (spontaneuous)
-- 44782826 (inspiratory)
+1. 44782826 (inspiratory)
+2. 4108448 (spontaneuous)
+3. 3012410 (setting)
+4. 4029625 (general, no information about setting/measurement)
 
 
 ## Guidance
