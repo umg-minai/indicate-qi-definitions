@@ -171,6 +171,14 @@ body height [cm]:
 Gender:
 - 4135376
 
+or more specific:
+Female:
+- 8532
+
+Male:
+- 8507
+
+
 IBW:
 - 40308117
 
