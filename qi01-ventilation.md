@@ -187,22 +187,28 @@ PaO2/FiO2:
 - 3029943
 
 PaO2:
-- 3027801
+- 3027801 (default)
+- 3022803 (temperature adjusted)
 
 FiO2:
 - 4353936
 
 PEEP:
-- 4353713
+- 4353713 (measurement, should be favoured)
+- 4216746 (setting, if 4353713 is not available)
 
 Pplat:
 - 44782825
 
 Pinsp:
-- 4215838
+- 4215838 (inpiratory pressure setting [cmH2O])
+- 4101694 (peak inspiratory pressure [mmHg], CAVE different units, has to be converted to [cmH2O])
 
 VT:
 - 4029625 (measurement)
+- 3012410 (setting)
+- 4108448 (spontaneuous)
+- 44782826 (inspiratory)
 
 
 ## Guidance
