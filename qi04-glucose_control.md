@@ -91,7 +91,7 @@ Glucose levels [g/l], could be one of:
 ## Guidance
 
 We expect SI units.
-To convert blood glucose levels in mg/dl into mmol/l: mg/dl = 1/18.02 mmol/l.
+To convert blood glucose levels in mg/dl into mmol/l: mg/dl = 1/18 mmol/l.
 
 We just count complete 8-hour shifts.
 The first and last period that are less than 8 hours are ignored.
