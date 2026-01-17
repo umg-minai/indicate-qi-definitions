@@ -78,6 +78,15 @@ CRBSI, could be one of:
 CVC:
 - 4179206
 
+CVC insertion, any of:
+- 4052413 (insertion)
+- 4051188 (insertion via internal jugular vein)
+- 4052415 (insertion via subclavian vein)
+- 4052416 (insertion via femoral vein)
+
+CVC removal:
+- 4022792
+
 invasive ventilation:
 - 37158404
 
@@ -96,6 +105,11 @@ Days on invasive ventilation (DV):
 
 CVC days (CD):
 (time of removal of the CVC - time of insertion of the CVC)[h] / 24 h
+
+Note:
+Maybe CVC days have to be calulated manually with the mappings
+for *CVC removal* and *CVC insertion*, or the *CVC* mapping contains end/start
+information.
 
 The incidence of VAP/CRBSI is calculated by
 VAPI = VAP / DV * 1000
