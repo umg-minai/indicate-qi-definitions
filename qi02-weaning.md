@@ -57,9 +57,6 @@ intubated (tube present):
 invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
 - 37158404
 
-invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
-- 37158404
-
 trial of spontaneous breathing:
 - 4308797
 
