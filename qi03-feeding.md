@@ -78,6 +78,9 @@ IBW:
 Energy requirement [cal]:
 - 4022415
 
+Carbon dioxide production:
+- 21490580
+
 Contraindication to enteral feeding:
 - 4141768
 
@@ -115,7 +118,9 @@ The calorie target should be
 a) The `minimal_dataset` defines an "energy requirement" item which should be
 used if available (may be based on indirect calorimetry, carbon dioxide
 production rate or formulas).
-b) estimated using a formula.
+b) continuously estimated by the carbon dioxide production rate (VCO2)
+measured by the ventilator - the median of the last 24 hours should be used.
+c) estimated using a formula.
 
 The calorie target depends on the body-mass-index (BMI) of the patient.
 
@@ -129,6 +134,14 @@ The initial calorie target (ICT) is calculate as follows:
 initial calorie target [kcal/d] =
     IF Energy requirement is available THEN
         Energy requirement
+    ELSE IF carbon dioxide production rate
+        IF BMI < 30 THEN
+        - median of the carbon dioxide production rate of the
+          previous day in ml/min:
+            VCO2 [ml/min] * 8.19
+        ELSE
+        - 60 % of median of the carbon dioxide production rate of the
+          previous day in ml/min:
     ELSE
         IF BMI < 30 THEN
         - 24 kcal/d/kg body weight (actual body weight):
