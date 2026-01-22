@@ -173,13 +173,15 @@ The calorie target must not be adjusted below zero or above the ICT.
 
 If the insulin is not applied continuously
 the "maximum insulin dose" is equivalent to
-the sum of all give international units [IE] of insulin derivates per 24 h period divided by 24 h (equals the mean insule dose per hour).
+the sum of all give international units [IE] of insulin derivates per 24 h period
+(from 6:00 to 5:59)
+divided by 24 h (equals the mean insule dose per hour).
 
 ```
 CTD0 (calorie target day 0): 0 [first 24 hours are ignored]
 CTD1: 0.75 * ICT
 CTDi:
-    IF NOT renal replacement therapy AND phosphate on Day i < 0.65 mmol/l
+    IF NOT renal replacement therapy on Day (i - 1) AND phosphate on Day i < 0.65 mmol/l
         AND CTD(i-1) >= 0.5 * ICT
         AND maximum insulin dose on Day (i - 1) <= 4 IE/h
         0.25 * ICT
@@ -194,12 +196,17 @@ CTDi:
         CTD(i-1) - 0.5 * ICT
 ```
 
-A day is not defined as midnight-to-midnight but is a full 24-hour period
-that starts at the time of admission to the intensive care unit.
-The first 24 hours are ignored because feeding should start within 24 to 48
-hours.
-The last period before discharge from the intensive care unit is ignored if it
-is less than 24 hours.
+A day is defined as full period from 6:00 to 5:59 on the next day.
+The first incomplete period is ignored as well as the first
+complete 6:00 to 5:59 period because feeding should start
+within 24 to 48 hours.
+The last incomplete 6:00 to 5:59 period before discharge from
+the intensive care unit is ignored as well.
+
+If `renal replacement therapy` is missing we assume it was not needed.
+If `phosphate` is missing  we assume it was normal (means > 0.65 mmol/l).
+
+If `insulin dose` or `calorie intake` is missing we set the values to `NA`.
 
 
 ## Initial Population
@@ -210,7 +217,8 @@ period.
 
 ## Numerator
 
-For each 24 hour period starting at admission + 24 hours the calorie intake has
+For each 6:00 to 5:59 period starting at second complete period
+the calorie intake has
 to be 10 % lower/higher than the individualised daily calorie target.
 
 ```
@@ -220,7 +228,8 @@ calorie intake >= 0.9 * CTDi AND calorie intake =< 1.1 * CTDi
 
 ## Numerator Exclusion
 
-First 24 hours and incomplete last 24 hour period.
+First incomplete 6:00 to 5:59 period and first day (first complete 6:00 to 5:59
+period) and incomplete last period.
 
 
 ## Denominator
@@ -230,7 +239,8 @@ Number of 24 hour periods.
 
 ## Denominator Exclusion
 
-First 24 hours and incomplete last 24 hour period
+First incomplete 6:00 to 5:59 period and first day (first complete 6:00 to 5:59
+period) and incomplete last period.
 OR
 Contraindication to enteral feeding
 
