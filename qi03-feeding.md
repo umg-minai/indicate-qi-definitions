@@ -142,6 +142,7 @@ initial calorie target [kcal/d] =
         ELSE
         - 60 % of median of the carbon dioxide production rate of the
           previous day in ml/min:
+            VCO2 [ml/min] * 8.19 * 0.6
     ELSE
         IF BMI < 30 THEN
         - 24 kcal/d/kg body weight (actual body weight):
