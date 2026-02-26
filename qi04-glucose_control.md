@@ -80,13 +80,21 @@ acceptable range or the next one is at least 20 % higher/lower
 
 athena concept ids
 
-Glucose levels [g/l], could be one of:
-- 3004501 (serum)
-- 3000483 (blood)
-- 3033408 (venous blood)
-- 1092148 (mixed venous blood)
-- 3034962 (capillary blood)
-
+Glucose levels, could be one of:
+- mass/volume [g/l]
+  - 3004501 (serum)
+  - 3000483 (blood)
+  - 3033408 (venous blood)
+  - 1092148 (mixed venous blood)
+  - 3034962 (capillary blood by glucometer)
+- moles/volumes [mol/l]
+  - 3031266 (arterial blood)
+  - 3004077 (capillary blood)
+  - 3020491 (blood)
+  - 3001501 (capillary blood by glucometer)
+  - 1761753 (mixed venous blood)
+  - 3013826 (serum or plasma)
+  - 3038515 (venous blood)
 
 ## Guidance
 
