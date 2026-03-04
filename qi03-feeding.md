@@ -73,7 +73,7 @@ body weight [kg]:
 - 4099154
 
 IBW:
-- 40308117
+- 4062985
 
 Energy requirement [cal]:
 - 4022415
