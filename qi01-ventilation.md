@@ -171,7 +171,7 @@ If more than one concepts are available at a specific time points the one with
 the highest priority (lowest number) should be used.
 
 body height [cm]:
-- 607590
+- 3036277
 
 Gender:
 - 4135376
