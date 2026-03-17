@@ -67,13 +67,13 @@ It is reached if the intaken calories are 10 % less or more than the target.
 athena concept ids
 
 body height [cm]:
-- 607590
+- 3036277
 
 body weight [kg]:
 - 4099154
 
 IBW:
-- 40308117
+- 4062985
 
 Energy requirement [cal]:
 - 4022415
