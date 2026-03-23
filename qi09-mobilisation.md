@@ -57,13 +57,17 @@ A day starts at 6:00 and ends at 22:00.
 
 ## Mapping
 
-athena concept ids
+**Notes:**
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
-Mobilization:
-- 4327195
 
-Order to not mobilize:
-- 4266013
+
+| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
+| Order not to mobilize | 2100000008 | INDICATE | Order not to mobilize | order-not-to-mobilize | [Order not to mobilize](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=295) |
+| Mobilization | 4327195 | SNOMED | Mobilization | 74923002 | [Mobilization](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=294) |
+
 
 
 ## Initial Population

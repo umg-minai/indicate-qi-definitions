@@ -49,20 +49,18 @@ We expect a "Trial of spontaneous breathing" entry.
 
 ## Mapping
 
-athena concept ids
+**Notes:**
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
-intubated (tube present):
-- 4097216
 
-invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
-- 37158404
-
-trial of spontaneous breathing:
-- 4308797
-
-extubation
-- 4148972 (normal)
-- 4231838 (inadvertent)
+| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
+| Intubated (tube present) | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=299) |
+| Invasive mechanical ventilation | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
+| Trial of spontaneous breathing | 4308797 | SNOMED | Trial of spontaneous breathing | 424139009 | [Trial of spontaneous breathing](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=309) |
+| Extubation | 4148972 | SNOMED | Extubation of trachea (normal) | 309812005 | [Extubation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=303) |
+| Extubation | 4231838 | SNOMED | Inadvertent tracheal extubation (inadvertent) | 405639008 | [Extubation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=303) |
 
 ## Guidance
 
