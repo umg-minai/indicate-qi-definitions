@@ -57,13 +57,13 @@ A day starts at 6:00 and ends at 22:00.
 
 ## Mapping
 
-athena concept ids
+INDICATE Data Dictionary Concept IDs
 
-Mobilization:
-- 4327195
+| Concept ID | Vocabulary | Concept Name                  | Concept Code          |
+|------------|------------|-------------------------------|-----------------------|
+| 2100000008 | INDICATE   | Order not to mobilize         | order-not-to-mobilize |
+| 4327195    | SNOMED     | Mobilization                  | 74923002              |
 
-Order to not mobilize:
-- 4266013
 
 
 ## Initial Population
