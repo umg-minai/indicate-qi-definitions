@@ -165,67 +165,105 @@ Pdelta = Pplat - PEEP
 
 ## Mapping
 
-athena concept ids
-
 If more than one concepts are available at a specific time points the one with
 the highest priority (lowest number) should be used.
 
-body height [cm]:
-- 3036277
+### Body height
 
-Gender:
-- 4135376
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=274) |
 
-or more specific:
-Female:
-- 8532
+### Gender
 
-Male:
-- 8507
+Encoded in `person` Table, see [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations).
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 8532 | | Female | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations) |
+| 8507 | | Male | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations) |
+
+### Ideal body weight (IBW)
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=284) |
+
+### ARDS
 
 
-IBW:
-- 4062985
+ !! Changed from 45552897 (ICD10 Code J80 which is a non-standard OMOP code) to 4195694
 
-ARDS:
-- 45552897
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4195694 | SNOMED | Acute respiratory distress syndrome | 67782005 | [Acute Respiratory Distress Syndrome (ARDS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=26) |
 
-intubated (tube present):
-- 4097216
+### Intubated (tube present)
 
-invasive ventilation (invasive ventilation requires a tube)/mechanical ventilated:
-- 37158404
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4097216 | | Intubated (tube present) | | **Missing from DD** |
 
-ventilation mode:
-- 37042784
+### Invasive mechanical ventilation
 
-PaO2/FiO2:
-- 3029943
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
 
-PaO2:
-1. 3027801 (default)
-2. 3022803 (temperature adjusted)
+### Ventilation mode
 
-FiO2:
-- 4353936
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 37042784 | | Ventilation mode | | **Missing from DD** |
 
-PEEP:
-1. 42527140 (total, measured)
-2. 4216746 (setting)
-3. 4353713 (general, no information about setting/measurement)
+### PaO2/FiO2 (Horowitz index)
 
-Pplat:
-- 44782825
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3029943 | LOINC | Horowitz index in Arterial blood | 50984-4 | [Horowitz index](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=313) |
 
-Pinsp:
-1. 4215838 (inpiratory pressure setting [cmH2O])
-2. 4101694 (peak inspiratory pressure [mmHg], CAVE different units, has to be converted to [cmH2O])
+### PaO2
 
-VT:
-1. 44782826 (inspiratory)
-2. 4108448 (spontaneuous)
-3. 3012410 (setting)
-4. 4029625 (general, no information about setting/measurement)
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3027801 | LOINC | Oxygen [Partial pressure] in Arterial blood (1. default) | 2703-7 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=152) |
+| 3022803 | LOINC | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (2. temperature adjusted) | 19255-9 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=152) |
+
+### FiO2
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4353936 | SNOMED | Inspired oxygen concentration | 250774007 | [Fraction of inspired oxygen (FiO2)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=301) |
+
+### PEEP
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 42527140 | LOINC | Total PEEP Respiratory system (1. total, measured) | 76247-6 | [Positive End-Expiratory Pressure (PEEP)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=318) |
+| 4216746 | SNOMED | Positive end expiratory pressure setting (2. setting) | 416595007 | [Positive End-Expiratory Pressure (PEEP)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=318) |
+| 4353713 | SNOMED | Positive end expiratory pressure (3. general) | 250854009 | [Positive End-Expiratory Pressure (PEEP)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=318) |
+
+### Plateau pressure (Pplat)
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 44782825 | SNOMED | Airway plateau pressure | 698822002 | [Plateau pressure](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=320) |
+
+### Inspiratory pressure (Pinsp)
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4215838 | | Inspiratory pressure setting [cmH2O] (1. priority) | | **Missing from DD** |
+| 4101694 | SNOMED | Peak inspiratory pressure [mmHg] (2. CAVE different units, convert to cmH2O) | 27913002 | [Peak inspiration pressure](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=319) |
+
+### Tidal volume (VT)
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 44782826 | SNOMED | Inspiratory tidal volume (1. inspiratory) | 698823007 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |
+| 4108448 | SNOMED | Spontaneous tidal volume (2. spontaneous) | 250816009 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |
+| 3012410 | LOINC | Tidal volume setting Ventilator (3. setting) | 20112-9 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |
+| 4029625 | SNOMED | Tidal volume (4. general) | 13621006 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |
 
 
 ## Guidance

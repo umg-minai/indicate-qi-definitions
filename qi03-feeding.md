@@ -64,53 +64,85 @@ It is reached if the intaken calories are 10 % less or more than the target.
 
 ## Mapping
 
-athena concept ids
+### Body height
 
-body height [cm]:
-- 3036277
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=274) |
 
-body weight [kg]:
-- 4099154
+### Body weight
 
-IBW:
-- 4062985
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4099154 | SNOMED | Body weight | 27113001 | [Body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=275) |
 
-Energy requirement [cal]:
-- 4022415
+### Ideal body weight (IBW)
 
-Carbon dioxide production:
-- 21490580
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=284) |
 
-Contraindication to enteral feeding:
-- 4141768
+### Energy requirement
 
-Calorie intake total 24 hour [cal]:
-- 3026267
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4022415 | SNOMED | Energy requirement | 226244007 | [Energy requirement](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=287) |
 
-Renal replacement therapy, could be one of:
-- 4051330 (continuous venovenous hemofiltration)
-- 4051329 (continuous venovenous hemodialysis)
-- 4049846 (continuous venovenous hemodiafiltration)
-- 4051326 (intermittent hemodialysis)
+### Carbon dioxide production
 
-Phosphate:
-- 3003458 (serum)
-- 3018913 (blood)
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 21490580 | LOINC | Carbon dioxide production (VCO2) in Respiratory system | 60825-7 | [Carbon dioxide production](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=311) |
 
-insulin [IE], could be one of:
-- 35198096 (insulin aspart)
-- 1544838 (insulin glulisine, human)
-- 1567198 (insulin aspart, human)
-- 1516976 (insulin detemir)
-- 35602717 (insulin degludec)
+### Contraindication to enteral feeding
 
-Calorie intake total:
-- 3007882
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4141768 | SNOMED | Medical contraindication to procedure | 266757004 | [Contraindication to enteral feeding](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=285) |
+
+### Calorie intake total 24 hour
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3026267 | LOINC | Calorie intake total 24 hour | 9057-1 | [Energy intake](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=286) |
+
+### Renal replacement therapy
+ could be one of:
+ 
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 4051330 | SNOMED | Continuous venovenous hemofiltration | 233585000 | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=298) |
+| 4051329 | SNOMED | Continuous venovenous hemodialysis | 233580005 | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=298) |
+| 4049846 | SNOMED | Continuous venovenous hemodiafiltration | 233590002 | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=298) |
+| 4051326 | SNOMED | Intermittent hemodialysis | 233575001 | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=298) |
+
+### Phosphate
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3003458 | LOINC | Phosphate [Moles/volume] in Serum or Plasma | 14879-1 | [Plasma phosphate](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=210) |
+| 3018913 | LOINC | Phosphate [Moles/volume] in Blood | 24519-1 | [Plasma phosphate](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=210) |
+
+### Insulin
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 35198096 | | insulin aspart | | **Missing from DD** |
+| 1544838 | | insulin glulisine, human | | **Missing from DD** |
+| 1567198 | | insulin aspart, human | | **Missing from DD** |
+| 1516976 | | insulin detemir | | **Missing from DD** |
+| 35602717 | | insulin degludec | | **Missing from DD** |
+
+### Calorie intake total
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3007882 | | Calorie intake total | | **Missing from DD** |
 
 @NOTE: @Jan maybe we have to redefine our 24 h period if the calorie intake
 counter is reset at a given time (e.g. every morning at 6:00)
 Calorie intake total 24 hour:
-- 3026267
+- 3026267 (duplicate of above)
 
 ## Guidance
 

@@ -78,23 +78,29 @@ acceptable range or the next one is at least 20 % higher/lower
 
 ## Mapping
 
-athena concept ids
+### Glucose levels
 
-Glucose levels, could be one of:
-- mass/volume [g/l]
-  - 3004501 (serum)
-  - 3000483 (blood)
-  - 3033408 (venous blood)
-  - 1092148 (mixed venous blood)
-  - 3034962 (capillary blood by glucometer)
-- moles/volumes [mol/l]
-  - 3031266 (arterial blood)
-  - 3004077 (capillary blood)
-  - 3020491 (blood)
-  - 3001501 (capillary blood by glucometer)
-  - 1761753 (mixed venous blood)
-  - 3013826 (serum or plasma)
-  - 3038515 (venous blood)
+#### Mass/volume
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3004501 | | Glucose [Mass/volume] in Serum | | **Missing from DD** |
+| 3000483 | LOINC | Glucose [Mass/volume] in Blood | 2339-0 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3033408 | LOINC | Glucose [Mass/volume] in Venous blood | 41652-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 1092148 | | Glucose [Mass/volume] in Mixed venous blood | | **Missing from DD** |
+| 3034962 | | Glucose [Mass/volume] in Capillary blood by Glucometer | | **Missing from DD** |
+
+#### Moles/volume
+
+| Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|------------|------------|--------------|--------------|----------------|
+| 3031266 | LOINC | Glucose [Mass/volume] in Arterial blood | 41651-1 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3004077 | LOINC | Glucose [Mass/volume] in Capillary blood | 32016-8 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3020491 | LOINC | Glucose [Moles/volume] in Blood | 15074-8 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3001501 | LOINC | Glucose [Moles/volume] in Capillary blood by Glucometer | 14743-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 1761753 | LOINC | Glucose [Moles/volume] in Mixed venous blood | 100746-7 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3013826 | LOINC | Glucose [Moles/volume] in Serum or Plasma | 14749-6 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| 3038515 | LOINC | Glucose [Moles/volume] in Venous blood | 39480-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 
 ## Guidance
 

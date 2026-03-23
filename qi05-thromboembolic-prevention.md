@@ -48,12 +48,44 @@ None.
 
 ## Mapping
 
-use `omop_concept_id` of all drugs with the `subcategory` *Anticoagulants* in the `minimal_data_dictonary`.
+INDICATE Data Dictionary Concept IDs
 
-and add
+All concepts from the following anticoagulant concept sets in the INDICATE Data Dictionary:
 
-Certoparin (is missing in `minimal_dataset`)
-- 19016072
+| Concept Set Name     | Number of Concepts | DD Concept Set |
+|----------------------|--------------------|----------------|
+| Acenocoumarol        | 2                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=33) |
+| Apixaban             | 4                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=34) |
+| Argatroban           | 9                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=35) |
+| Bemiparin            | 10                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=36) |
+| Betrixaban           | 2                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=37) |
+| Bivalirudin          | 7                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=38) |
+| Clorindione          | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=39) |
+| Dabigatran Etexilate | 9                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=40) |
+| Dalteparin           | 47                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=41) |
+| Danaparoid           | 4                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=42) |
+| Desirudin            | 2                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=43) |
+| Dicumarol            | 5                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=44) |
+| Edoxaban             | 6                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=45) |
+| Enoxaparin           | 25                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=46) |
+| Fluindione           | 2                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=47) |
+| Fondaparinux         | 6                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=48) |
+| Heparin              | 303                | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=49) |
+| Lepirudin            | 5                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=50) |
+| Melagatran           | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=51) |
+| Nadroparin           | 21                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=52) |
+| Parnaparin           | 6                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=53) |
+| Phenindione          | 3                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=54) |
+| Phenprocoumon        | 4                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=55) |
+| Reviparin            | 23                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=56) |
+| Rivaroxaban          | 13                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=57) |
+| Sulodexide           | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=58) |
+| Tinzaparin           | 26                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=59) |
+| Tioclomarol          | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=60) |
+| Warfarin             | 35                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=61) |
+| Ximelagatran         | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=62) |
+
+Note: Certoparin is not available in the INDICATE Data Dictionary.
 
 
 ## Guidance

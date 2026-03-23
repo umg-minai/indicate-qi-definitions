@@ -68,30 +68,36 @@ the CRBSI incidence and VAP incidence.
 
 ## Mapping
 
-athena concept ids
+### Catheter-related bloodstream infection (CRBSI)
 
-CRBSI, could be one of:
-- 42537216 (general, CRBSI)
-- 4149606 (infection of intravenous catheter)
-- 764921 (infection of hemodialyses catheter)
+| Concept ID | Vocabulary | Concept Name                           | Concept Code  | DD Concept Set |
+|------------|------------|----------------------------------------|---------------|----------------|
+| 42537216   | SNOMED     | Catheter related bloodstream infection | 788163003     | [Catheter infection](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=31) |
+| 764921     | SNOMED     | Infection of hemodialysis catheter     | 6011000124100 | [Catheter infection](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=31) |
+| 4149606    | SNOMED     | Infection of intravenous catheter      | 312133006     | [Catheter infection](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=31) |
 
-CVC:
-- 4179206
+### Central venous catheter (CVC)
 
-CVC insertion, any of:
-- 4052413 (insertion)
-- 4051188 (insertion via internal jugular vein)
-- 4052415 (insertion via subclavian vein)
-- 4052416 (insertion via femoral vein)
+| Concept ID | Vocabulary | Concept Name                                              | Concept Code | DD Concept Set |
+|------------|------------|-----------------------------------------------------------|--------------|----------------|
+| 4179206    | SNOMED     | Central venous catheter                                   | 52124006     | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
+| 4052413    | SNOMED     | Central venous cannula insertion                          | 233527006    | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
+| 4051188    | SNOMED     | Central venous cannula insertion via internal jugular vein | 233523003    | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
+| 4052415    | SNOMED     | Central venous cannula insertion via subclavian vein      | 233529009    | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
+| 4052416    | SNOMED     | Central venous cannula insertion via femoral vein         | 233530004    | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
+| 4022792    | SNOMED     | Removal of central venous line                            | 225749003    | [Central venous catheter](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=291) |
 
-CVC removal:
-- 4022792
+### Invasive mechanical ventilation
 
-invasive ventilation:
-- 37158404
+| Concept ID | Vocabulary | Concept Name                    | Concept Code | DD Concept Set |
+|------------|------------|---------------------------------|--------------|----------------|
+| 37158404   | SNOMED     | Invasive mechanical ventilation | 1258985005   | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
 
-VAP:
-- 429271009
+### Ventilator-associated pneumonia (VAP)
+
+| Concept ID | Vocabulary | Concept Name                    | Concept Code | DD Concept Set |
+|------------|------------|---------------------------------|--------------|----------------|
+| 259992     | SNOMED     | Ventilator associated pneumonia | 429271009    | [Ventilator-associated pneumonia](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=32) |
 
 
 ## Guidance

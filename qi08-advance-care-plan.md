@@ -47,17 +47,25 @@ None.
 
 ## Mapping
 
-athena concept ids
 
-Advance care plan agreed:
-- 36685263
 
-Consultation with patient:
-- 37164964
+### Advance care plan agreed
 
-Decision authority documented:
-- 3040278
+| Concept ID | Vocabulary | Concept Name             | Concept Code     | DD Concept Set |
+|------------|------------|--------------------------|------------------|----------------|
+| 36685263   | SNOMED     | Advance care plan agreed | 1095851000000100 | [Advance care plan agreed](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=288) |
 
+### Consultation with patient
+
+| Concept ID | Vocabulary | Concept Name              | Concept Code | DD Concept Set |
+|------------|------------|---------------------------|--------------|----------------|
+| 37164964   | SNOMED     | Consultation with patient | 1237136005   | [Consultation with patient](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=289) |
+
+### Decision authority documented
+
+| Concept ID | Vocabulary | Concept Name                  | Concept Code | DD Concept Set |
+|------------|------------|-------------------------------|--------------|----------------|
+| 3040278    |            | Decision authority documented |              | **Missing from DD** |
 
 ## Initial Population
 
