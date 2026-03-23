@@ -2,7 +2,7 @@
 
 ## Title
 
-Advanced care planing
+Advance care plan
 
 
 ## ID
