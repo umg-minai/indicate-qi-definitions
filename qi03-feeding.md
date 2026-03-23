@@ -64,8 +64,13 @@ It is reached if the intaken calories are 10 % less or more than the target.
 
 ## Mapping
 
+**Notes:**
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+
+
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
 | Body height | 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=274) |
 | Body weight | 4099154 | SNOMED | Body weight | 27113001 | [Body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=275) |
 | IBW | 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=284) |

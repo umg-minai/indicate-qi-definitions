@@ -95,9 +95,12 @@ It is just important that these assessments were done at a given time point.
 
 **Notes**:
 * GCS changed from 4093836 (non-standard code from SNOMED CT) to 3007194 (OMOP Standard code from LOINC).
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+
 
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
 | Pain | 2100000007 | INDICATE | Behavioral Pain Scale (BPS) | BPS | [Behavioral Pain Scale (BPS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=3) |
 | Pain | 37151627 | SNOMED | Numeric Pain Rating Scale | 1284852002 | [Numeric Pain Rating Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=10) |
 | Pain | 4165600 | SNOMED | Visual analog pain scale | 273904000 | [Visual analog pain scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=15) |

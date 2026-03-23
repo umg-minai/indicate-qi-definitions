@@ -78,8 +78,13 @@ acceptable range or the next one is at least 20 % higher/lower
 
 ## Mapping
 
+**Notes:**
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+
+
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
 | Glucose (mass/volume) | 3004501 | LOINC | Glucose [Mass/volume] in Serum or Plasma | 2345-7 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (mass/volume) | 3000483 | LOINC | Glucose [Mass/volume] in Blood | 2339-0 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (mass/volume) | 3033408 | LOINC | Glucose [Mass/volume] in Venous blood | 41652-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |

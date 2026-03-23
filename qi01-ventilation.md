@@ -170,10 +170,12 @@ Pdelta = Pplat - PEEP
 the highest priority (lowest number) should be used.
 * ARDS Changed from 45552897 (ICD10 Code J80 which is a non-standard OMOP code) to 4195694
 * Gender is encoded in `person` table, see [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations).
+* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
 
 | Category | Priority | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | | 32037 | Visit | Intensive care | OMOP4822460 | N/A|
 | Body height | | 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=274) |
 | Gender | | 8532 | | Female | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations) |
 | Gender | | 8507 | | Male | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations) |
