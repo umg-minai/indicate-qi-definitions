@@ -57,12 +57,10 @@ A day starts at 6:00 and ends at 22:00.
 
 ## Mapping
 
-INDICATE Data Dictionary Concept IDs
-
-| Concept ID | Vocabulary | Concept Name          | Concept Code          | DD Concept Set |
-|------------|------------|-----------------------|-----------------------|----------------|
-| 2100000008 | INDICATE   | Order not to mobilize | order-not-to-mobilize | [Order not to mobilize](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=295) |
-| 4327195    | SNOMED     | Mobilization          | 74923002              | [Mobilization](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=294) |
+| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|------------|------------|--------------|--------------|----------------|
+| Order not to mobilize | 2100000008 | INDICATE | Order not to mobilize | order-not-to-mobilize | [Order not to mobilize](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=295) |
+| Mobilization | 4327195 | SNOMED | Mobilization | 74923002 | [Mobilization](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=294) |
 
 
 

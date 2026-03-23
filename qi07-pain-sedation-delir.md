@@ -93,39 +93,22 @@ It is just important that these assessments were done at a given time point.
 
 ## Mapping
 
-### Pain
-
-| Concept ID | Vocabulary | Concept Name                | Concept Code | DD Concept Set |
-|------------|------------|-----------------------------|--------------|----------------|
-| 2100000007 | INDICATE   | Behavioral Pain Scale (BPS) | BPS          | [Behavioral Pain Scale (BPS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=3) |
-| 37151627   | SNOMED     | Numeric Pain Rating Scale   | 1284852002   | [Numeric Pain Rating Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=10) |
-| 4165600    | SNOMED     | Visual analog pain scale    | 273904000    | [Visual analog pain scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=15) |
-
-### Sedation
-
-| Concept ID | Vocabulary | Concept Name                      | Concept Code    | DD Concept Set |
-|------------|------------|-----------------------------------|-----------------|----------------|
-| 36684829   | SNOMED     | Richmond Agitation-Sedation Scale | 457441000124102 | [Richmond Agitation-Sedation Scale (RASS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=14) |
-| 4105091    | SNOMED     | Ramsay sedation scale             | 281400004       | [Ramsay sedation scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=13) |
-
-### Delirium
-
-| Concept ID | Vocabulary | Concept Name                                                     | Concept Code     | DD Concept Set |
-|------------|------------|------------------------------------------------------------------|------------------|----------------|
-| 2100000000 | INDICATE   | 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM)  | 3D-CAM           | [3D-CAM](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=1) |
-| 3662219    | SNOMED     | 4AT - 4 A's Test                                                 | 1239191000000102 | [4 A's Test for Delirium Screening](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=2) |
-| 2100000001 | INDICATE   | Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) | CAM-ICU         | [CAM-ICU](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=4) |
-| 2100000002 | INDICATE   | Delirium Detection Score (DDS)                                   | DDS              | [Delirium Detection Score (DDS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=5) |
-| 2100000004 | INDICATE   | Delirium Observation Screening (DOS) scale                       | DOS-scale        | [Delirium Observation Screening (DOS) Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=6) |
-| 2100000006 | INDICATE   | Delirium Rating Scale-revised-98 (DRS-R-98)                      | DRS-R-98         | [Delirium Rating Scale-revised-98 (DRS-R-98)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=7) |
-| 2100000003 | INDICATE   | Intensive Care Delirium Screening Checklist (ICDSC)              | ICDSC-score      | [ICDSC](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=9) |
-| 2100000005 | INDICATE   | Nursing Delirium Screening Scale (Nu-DESC)                       | Nu-DESC          | [Nursing Delirium Screening Scale (Nu-DESC)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=11) |
-
-### Glasgow Coma Scale (GCS)
-
-| Concept ID | Vocabulary | Concept Name             | Concept Code | DD Concept Set |
-|------------|------------|--------------------------|--------------|----------------|
-| 3007194    | LOINC      | Glasgow coma score total | 9269-2       | [Glasgow Coma Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=8) |
+| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|------------|------------|--------------|--------------|----------------|
+| Pain | 2100000007 | INDICATE | Behavioral Pain Scale (BPS) | BPS | [Behavioral Pain Scale (BPS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=3) |
+| Pain | 37151627 | SNOMED | Numeric Pain Rating Scale | 1284852002 | [Numeric Pain Rating Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=10) |
+| Pain | 4165600 | SNOMED | Visual analog pain scale | 273904000 | [Visual analog pain scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=15) |
+| Sedation | 36684829 | SNOMED | Richmond Agitation-Sedation Scale | 457441000124102 | [Richmond Agitation-Sedation Scale (RASS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=14) |
+| Sedation | 4105091 | SNOMED | Ramsay sedation scale | 281400004 | [Ramsay sedation scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=13) |
+| Delirium | 2100000000 | INDICATE | 3-minute Diagnostic Interview for CAM-defined Delirium (3D-CAM) | 3D-CAM | [3D-CAM](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=1) |
+| Delirium | 3662219 | SNOMED | 4AT - 4 A's Test | 1239191000000102 | [4 A's Test for Delirium Screening](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=2) |
+| Delirium | 2100000001 | INDICATE | Confusion Assessment Method for the Intensive Care Unit (CAM-ICU) | CAM-ICU | [CAM-ICU](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=4) |
+| Delirium | 2100000002 | INDICATE | Delirium Detection Score (DDS) | DDS | [Delirium Detection Score (DDS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=5) |
+| Delirium | 2100000004 | INDICATE | Delirium Observation Screening (DOS) scale | DOS-scale | [Delirium Observation Screening (DOS) Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=6) |
+| Delirium | 2100000006 | INDICATE | Delirium Rating Scale-revised-98 (DRS-R-98) | DRS-R-98 | [Delirium Rating Scale-revised-98 (DRS-R-98)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=7) |
+| Delirium | 2100000003 | INDICATE | Intensive Care Delirium Screening Checklist (ICDSC) | ICDSC-score | [ICDSC](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=9) |
+| Delirium | 2100000005 | INDICATE | Nursing Delirium Screening Scale (Nu-DESC) | Nu-DESC | [Nursing Delirium Screening Scale (Nu-DESC)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=11) |
+| GCS | 3007194 | LOINC | Glasgow coma score total | 9269-2 | [Glasgow Coma Scale](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=8) |
 
 
 
