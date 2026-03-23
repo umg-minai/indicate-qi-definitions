@@ -93,6 +93,9 @@ It is just important that these assessments were done at a given time point.
 
 ## Mapping
 
+**Notes**:
+* GCS changed from 4093836 (non-standard code from SNOMED CT) to 3007194 (OMOP Standard code from LOINC).
+
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
 | Pain | 2100000007 | INDICATE | Behavioral Pain Scale (BPS) | BPS | [Behavioral Pain Scale (BPS)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=3) |
