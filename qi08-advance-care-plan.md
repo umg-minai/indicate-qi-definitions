@@ -51,7 +51,7 @@ None.
 |----------|------------|------------|--------------|--------------|----------------|
 | Advance care plan agreed | 36685263 | SNOMED | Advance care plan agreed | 1095851000000100 | [Advance care plan agreed](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=288) |
 | Consultation with patient | 37164964 | SNOMED | Consultation with patient | 1237136005 | [Consultation with patient](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=289) |
-| Decision authority documented | 3040278 | | Decision authority documented | | **Missing from DD** |
+| Decision authority documented | 1032192 | LOINC | Decision authority documented | LP74704-5 | [Decision authority documented](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=342) |
 
 ## Initial Population
 

@@ -181,7 +181,8 @@ the highest priority (lowest number) should be used.
 | ARDS | | 4195694 | SNOMED | Acute respiratory distress syndrome | 67782005 | [ARDS](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=26) |
 | Intubated (tube present) | | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=299) |
 | Invasive mechanical ventilation | | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
-| Ventilation mode | | 37042784 | | Ventilation mode | | **Missing from DD** |
+| Ventilation mode (PCV) | | | | see [Ventilation Modes.md](Ventilation Modes.md) | | [Ventilation mode - Pressure driven (PCV)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=339) |
+| Ventilation mode (VCV) | | | | see [Ventilation Modes.md](Ventilation Modes.md) | | [Ventilation mode - Volume driven (VCV)](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=340) |
 | PaO2/FiO2 (Horowitz index) | | 3029943 | LOINC | Horowitz index in Arterial blood | 50984-4 | [Horowitz index](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=313) |
 | PaO2 | 1 | 3027801 | LOINC | Oxygen [Partial pressure] in Arterial blood (default) | 2703-7 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=152) |
 | PaO2 | 2 | 3022803 | LOINC | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (temperature adjusted) | 19255-9 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=152) |

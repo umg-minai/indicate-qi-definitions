@@ -84,8 +84,7 @@ All concepts from the following anticoagulant concept sets in the INDICATE Data 
 | Tioclomarol          | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=60) |
 | Warfarin             | 35                 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=61) |
 | Ximelagatran         | 1                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=62) |
-
-Note: Certoparin is not available in the INDICATE Data Dictionary.
+| Certoparin           | 9                  | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=341) |
 
 
 ## Guidance
