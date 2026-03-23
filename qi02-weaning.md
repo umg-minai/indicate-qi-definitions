@@ -51,7 +51,7 @@ We expect a "Trial of spontaneous breathing" entry.
 
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
-| Intubated (tube present) | 4097216 | | Intubated (tube present) | | **Missing from DD** |
+| Intubated (tube present) | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=299) |
 | Invasive mechanical ventilation | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
 | Trial of spontaneous breathing | 4308797 | SNOMED | Trial of spontaneous breathing | 424139009 | [Trial of spontaneous breathing](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=309) |
 | Extubation | 4148972 | SNOMED | Extubation of trachea (normal) | 309812005 | [Extubation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=303) |

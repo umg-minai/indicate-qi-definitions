@@ -179,7 +179,7 @@ the highest priority (lowest number) should be used.
 | Gender | | 8507 | | Male | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary-content/#/mapping-recommendations) |
 | IBW | | 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=284) |
 | ARDS | | 4195694 | SNOMED | Acute respiratory distress syndrome | 67782005 | [ARDS](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=26) |
-| Intubated (tube present) | | 4097216 | | Intubated (tube present) | | **Missing from DD** |
+| Intubated (tube present) | | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=299) |
 | Invasive mechanical ventilation | | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) |
 | Ventilation mode | | 37042784 | | Ventilation mode | | **Missing from DD** |
 | PaO2/FiO2 (Horowitz index) | | 3029943 | LOINC | Horowitz index in Arterial blood | 50984-4 | [Horowitz index](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=313) |
@@ -190,7 +190,7 @@ the highest priority (lowest number) should be used.
 | PEEP | 2 | 4216746 | SNOMED | Positive end expiratory pressure setting | 416595007 | [PEEP](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=318) |
 | PEEP | 3 | 4353713 | SNOMED | Positive end expiratory pressure (general, no information about setting/measurement) | 250854009 | [PEEP](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=318) |
 | Pplat | | 44782825 | SNOMED | Airway plateau pressure | 698822002 | [Plateau pressure](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=320) |
-| Pinsp | 1 | 4215838 | | Inspiratory pressure setting [cmH2O] | | **Missing from DD** |
+| Pinsp | 1 | 4215838 | SNOMED | Inspiratory pressure setting [cmH2O] | 417071008 | [Inspiratory pressure setting](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=314) |
 | Pinsp | 2 | 4101694 | SNOMED | Peak inspiratory pressure [mmHg], CAVE different units, convert to cmH2O | 27913002 | [Peak inspiration pressure](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=319) |
 | VT | 1 | 44782826 | SNOMED | Inspiratory tidal volume | 698823007 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |
 | VT | 2 | 4108448 | SNOMED | Spontaneous tidal volume | 250816009 | [Tidal volume](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=322) |

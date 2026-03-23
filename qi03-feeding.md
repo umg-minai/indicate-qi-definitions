@@ -79,12 +79,16 @@ It is reached if the intaken calories are 10 % less or more than the target.
 | Renal replacement therapy | 4051326 | SNOMED | Intermittent hemodialysis | 233575001 | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=298) |
 | Phosphate | 3003458 | LOINC | Phosphate [Moles/volume] in Serum or Plasma | 14879-1 | [Plasma phosphate](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=210) |
 | Phosphate | 3018913 | LOINC | Phosphate [Moles/volume] in Blood | 24519-1 | [Plasma phosphate](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=210) |
-| Insulin | 35198096 | | insulin aspart | | **Missing from DD** |
-| Insulin | 1544838 | | insulin glulisine, human | | **Missing from DD** |
-| Insulin | 1567198 | | insulin aspart, human | | **Missing from DD** |
-| Insulin | 1516976 | | insulin detemir | | **Missing from DD** |
-| Insulin | 35602717 | | insulin degludec | | **Missing from DD** |
-| Calorie intake total | 3007882 | | Calorie intake total | | **Missing from DD** |
+All concepts from the following insulin concept sets in the INDICATE Data Dictionary:
+
+| Concept Set Name | Number of Concepts | DD Concept Set |
+|------------------|--------------------|----------------|
+| Insulin Aspart | 14 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=122) |
+| Insulin Aspart, Human | 26 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=123) |
+| Insulin Degludec | 19 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=124) |
+| Insulin Detemir | 11 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=125) |
+| Insulin Glargine | 38 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=126) |
+| Insulin Glulisine, Human | 13 | [Link](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=127) |
 
 @NOTE: @Jan maybe we have to redefine our 24 h period if the calorie intake
 counter is reset at a given time (e.g. every morning at 6:00)

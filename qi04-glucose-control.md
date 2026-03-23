@@ -85,8 +85,8 @@ acceptable range or the next one is at least 20 % higher/lower
 | Glucose (mass/volume) | 3033408 | LOINC | Glucose [Mass/volume] in Venous blood | 41652-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (mass/volume) | 1092148 | | Glucose [Mass/volume] in Mixed venous blood | | **Missing from DD** |
 | Glucose (mass/volume) | 3034962 | | Glucose [Mass/volume] in Capillary blood by Glucometer | | **Missing from DD** |
-| Glucose (moles/volume) | 3031266 | LOINC | Glucose [Mass/volume] in Arterial blood | 41651-1 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3004077 | LOINC | Glucose [Mass/volume] in Capillary blood | 32016-8 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| Glucose (mass/volume) | 3031266 | LOINC | Glucose [Mass/volume] in Arterial blood | 41651-1 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
+| Glucose (mass/volume) | 3004077 | LOINC | Glucose [Mass/volume] in Capillary blood | 32016-8 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 3020491 | LOINC | Glucose [Moles/volume] in Blood | 15074-8 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 3001501 | LOINC | Glucose [Moles/volume] in Capillary blood by Glucometer | 14743-9 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 1761753 | LOINC | Glucose [Moles/volume] in Mixed venous blood | 100746-7 | [Plasma glucose](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=207) |
