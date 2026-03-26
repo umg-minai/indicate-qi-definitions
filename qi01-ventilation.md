@@ -145,15 +145,15 @@ We use the main driving force to differentiate between them.
 
 ### Plateau pressure
 
-Plateau pressure is defined for VCV.
-For PCV we will use the inspiratory pressure (Pinsp).
+Plateau pressure is always defined for VCV mode. When run in PCV mode, only some ventilation devices record Pplat.
+For a device in PCV mode that does not record Pplat, we will use the inspiratory pressure (Pinsp).
 
 ```
 Pplat:
-    IF ventilation mode IS VCV
-        Pplat
-    ELSE
+    IF Pplat IS MISSING AND ventilation mode IS PCV
         Pinsp
+    ELSE
+        Pplat
 ```
 
 ### Pressure difference
@@ -165,7 +165,7 @@ Pdelta = Pplat - PEEP
 
 ## Mapping
 
-**Notes**: 
+**Notes**:
 * If more than one concepts are available at a specific time points the one with
 the highest priority (lowest number) should be used.
 * ARDS Changed from 45552897 (ICD10 Code J80 which is a non-standard OMOP code) to 4195694
@@ -235,11 +235,12 @@ recommended PEEP:
 ## Initial Population
 
 All critically ill patients that are 18 years or older
-    AND mechanical ventilated
+    AND ventilation mode IN (VCV OR PCV from ventilation-modes.md)
     AND are intubated
     AND an ARDS is diagnosed
 during the observation period.
 
+Note: (ventilation mode IN (VCV OR PCV)) is false if no mechanical ventilation is performed.
 
 ## Numerator
 
