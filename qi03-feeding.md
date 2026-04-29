@@ -165,6 +165,9 @@ the sum of all give international units [IE] of insulin derivates per 24 h perio
 (from 6:00 to 5:59)
 divided by 24 h (equals the mean insule dose per hour).
 
+If no insulin dosage information is available for a given 24 h period,
+0 IE/h is used as the insulin dosage for that period.
+
 ```
 CTD0 (calorie target day 0): 0 [first 24 hours are ignored]
 CTD1: 0.75 * ICT
