@@ -1,6 +1,6 @@
 # Ventilation Modes
 
-Concepts from the [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id=306) concept set, grouped by mode (Volume Driven (VCV) vs. Pressure Driven (PCV)).
+Concepts from the [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) concept set, grouped by mode (Volume Driven (VCV) vs. Pressure Driven (PCV)).
 
 ## Pressure Driven
 

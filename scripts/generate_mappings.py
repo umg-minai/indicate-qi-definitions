@@ -10,7 +10,7 @@ import csv
 import re
 from pathlib import Path
 
-DD_LINK = "https://indicate-eu.github.io/data-dictionary-content/#/concept-sets?id={}"
+DD_LINK = "https://indicate-eu.github.io/data-dictionary/#/concept-sets?id={}"
 
 
 def load_dd(csv_path):

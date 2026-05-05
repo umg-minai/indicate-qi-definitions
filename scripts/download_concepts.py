@@ -7,7 +7,7 @@ import sys
 import time
 import urllib.request
 
-BASE_URL = "https://raw.githubusercontent.com/indicate-eu/data-dictionary-content/main"
+BASE_URL = "https://raw.githubusercontent.com/indicate-eu/data-dictionary/main"
 
 def fetch_json(url):
     """Fetch and parse JSON from a URL."""
