@@ -17,8 +17,8 @@ Early mobilisation
 
 ## Description
 
-Critically ill patients on an intensive care unit or their relatives should be
-consulted regarding care/treatment plans.
+Critically ill adult ICU patients should be mobilised at least once per eligible ICU day, unless there is a documented order not to mobilise.
+
 
 
 ## Justification
