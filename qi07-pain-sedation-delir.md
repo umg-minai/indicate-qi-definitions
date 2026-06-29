@@ -94,7 +94,6 @@ It is just important that these assessments were done at a given time point.
 ## Mapping
 
 **Notes**:
-* GCS changed from 4093836 (non-standard code from SNOMED CT) to 3007194 (OMOP Standard code from LOINC).
 * Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
 TODO: 36684829 (RASS) should be removed
@@ -120,9 +119,6 @@ TODO: 36684829 (RASS) should be removed
 | Delirium       | 2100000003 | INDICATE   | Intensive Care Delirium Screening Checklist (ICDSC)               | ICDSC-score      | [ICDSC](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=9)                                       |
 | Delirium       | 1450965    | SNOMED     | Intensive Care Delirium Screening Checklist (ICDSC)               | 1351995008       | [ICDSC](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=9)                                       |
 | Delirium       | 2100000005 | INDICATE   | Nursing Delirium Screening Scale (Nu-DESC)                        | Nu-DESC          | [Nursing Delirium Screening Scale (Nu-DESC)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=11) |
-| GCS            | 3007194    | LOINC      | Glasgow coma score total                                          | 9269-2           | [Glasgow Coma Scale](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=8)                          |
-
-
 
 ## Initial Population
 
