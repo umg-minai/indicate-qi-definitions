@@ -50,21 +50,22 @@ None.
 **Notes:**
 * Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
-
-
-| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
-|----------|------------|------------|--------------|--------------|----------------|
-| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
-| Advance care plan agreed | 36685263 | SNOMED | Advance care plan agreed | 1095851000000100 | [Advance care plan agreed](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=288) |
-| Consultation with patient | 37164964 | SNOMED | Consultation with patient | 1237136005 | [Consultation with patient](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289) |
-| Decision authority documented | 1032192 | LOINC | Decision authority documented | LP74704-5 | [Decision authority documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=342) |
+| Category                               | Concept ID | Vocabulary | Concept Name                                  | Concept Code     | DD Concept Set                                                                                       |
+|----------------------------------------|------------|------------|-----------------------------------------------|------------------|------------------------------------------------------------------------------------------------------|
+| Intensive Care                         | 32037      | Visit      | Intensive care                                | OMOP4822460      | N/A                                                                                                  |
+|----------------------------------------|------------|------------|-----------------------------------------------|------------------|------------------------------------------------------------------------------------------------------|
+| Advance care plan agreed               | 36685263   | SNOMED     | Advance care plan agreed                      | 1095851000000100 | [Advance care plan agreed](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=288)      |
+| Consultation with patient              | 37164964   | SNOMED     | Consultation with patient                     | 1237136005       | [Consultation with patient](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289)     |
+| Consultation with patient              | 37168078   | SNOMED     | Face to face consultation with patient        | 1237136005       | [Consultation with patient](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289)     |
+| Consultation with patient              | 4089048    | SNOMED     | New patient consultation                      | 185387006        | [Consultation with patient](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289)     |
+| Discussion about care plan with family | 4247376    | SNOMED     | Discussion about care plan with family        | 406140001        | ?                                                                                                    |
+| Decision authority documented          | 45877806   | LOINC      | The patient has designated a decision-maker … | LA11786-3        | [Decision authority documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=342) |
 
 ## Initial Population
 
 All critically ill patients that are 18 years or older
     AND have been more than 72 hours on ICU
 during the observation period.
-
 
 ## Numerator
 
@@ -73,7 +74,7 @@ there has to be
 
 Advance care plan agreed
 AND
-Consultation with patient
+(Consultation with patient OR Discussion about care plan with family)
 AND
 Decision authority documented
 
