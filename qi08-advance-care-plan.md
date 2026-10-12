@@ -49,6 +49,7 @@ None.
 
 **Notes:**
 * Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+* "Decision authority documented" is satisfied by either the designated decision-maker (LOINC LA11786-3) or an active healthcare surrogate (SNOMED 762209), see [issue #10](https://github.com/umg-minai/indicate-qi-definitions/issues/10).
 
 | Category                               | Concept ID | Vocabulary | Concept Name                                  | Concept Code     | DD Concept Set                                                                                       |
 |----------------------------------------|------------|------------|-----------------------------------------------|------------------|------------------------------------------------------------------------------------------------------|
@@ -60,6 +61,7 @@ None.
 | Consultation with patient              | 4089048    | SNOMED     | New patient consultation                      | 185387006        | [Consultation with patient](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289)     |
 | Discussion about care plan with family | 4247376    | SNOMED     | Discussion about care plan with family        | 406140001        | ?                                                                                                    |
 | Decision authority documented          | 45877806   | LOINC      | The patient has designated a decision-maker … | LA11786-3        | [Decision authority documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=342) |
+| Decision authority documented          | 762209     | SNOMED     | Active healthcare surrogate                   | 3021000175108    | [Surrogate decision maker documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=290) |
 
 ## Initial Population
 
