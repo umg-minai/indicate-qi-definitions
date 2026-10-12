@@ -78,6 +78,11 @@ the CRBSI incidence and VAP incidence.
 | CRBSI | 42537216 | SNOMED | Catheter related bloodstream infection | 788163003 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
 | CRBSI | 764921 | SNOMED | Infection of hemodialysis catheter | 6011000124100 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
 | CRBSI | 4149606 | SNOMED | Infection of intravenous catheter | 312133006 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
+| CRBSI | 42537043 | SNOMED | CLABSI - central line associated bloodstream infection | 736152001 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
+| CRBSI | 4201197 | SNOMED | Candidemia associated with intravascular line | 432480003 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
+| CRBSI | 42537495 | SNOMED | Infection of bloodstream associated with hemodialysis catheter in situ | 736918003 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
+| CRBSI | 42537540 | SNOMED | Infection of bloodstream associated with temporary hemodialysis catheter in situ | 736984007 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
+| CRBSI | 42537497 | SNOMED | Infection of bloodstream associated with tunneled hemodialysis catheter in situ | 736920000 | [Catheter infection](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) |
 | CVC | 4179206 | SNOMED | Central venous catheter | 52124006 | [Central venous catheter](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=291) |
 | CVC insertion | 4052413 | SNOMED | Central venous cannula insertion | 233527006 | [Central venous catheter](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=291) |
 | CVC insertion | 4051188 | SNOMED | Central venous cannula insertion via internal jugular vein | 233523003 | [Central venous catheter](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=291) |

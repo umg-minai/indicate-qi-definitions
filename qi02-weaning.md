@@ -60,6 +60,7 @@ We expect a "Trial of spontaneous breathing" entry.
 | Invasive mechanical ventilation | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) |
 | Trial of spontaneous breathing | 4308797 | SNOMED | Trial of spontaneous breathing | 424139009 | [Trial of spontaneous breathing](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=309) |
 | Extubation | 4148972 | SNOMED | Extubation of trachea (normal) | 309812005 | [Extubation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) |
+| Extubation | 4195943 | SNOMED | Ventilating tube removal by another physician | 44482009 | [Extubation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) |
 | Extubation | 4231838 | SNOMED | Inadvertent tracheal extubation (inadvertent) | 405639008 | [Extubation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) |
 
 ## Guidance

@@ -98,6 +98,14 @@ acceptable range or the next one is at least 20 % higher/lower
 | Glucose (moles/volume) | 3013826    | LOINC      | Glucose [Moles/volume] in Serum or Plasma               | 14749-6      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 3038515    | LOINC      | Glucose [Moles/volume] in Venous blood                  | 39480-9      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 3044242    | LOINC      | Glucose [Moles/volume] in Arterial blood                | 39481-7      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=157) |
+| Glucose (mass/volume)  | 1091312    | LOINC      | Glucose [Mass/volume] in Arterial blood by Glucometer   | 104598-8     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (mass/volume)  | 1092005    | LOINC      | Glucose [Mass/volume] in Venous blood by Glucometer     | 104597-0     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (mass/volume)  | 3011424    | LOINC      | Glucose [Mass/volume] in Blood by Automated test strip  | 2340-8       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (mass/volume)  | 3014053    | LOINC      | Glucose [Mass/volume] in Blood by Test strip manual     | 2341-6       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (mass/volume)  | 44816672   | LOINC      | Glucose [Mass/volume] in Serum, Plasma or Blood         | 74774-1      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (moles/volume) | 43055143   | LOINC      | Glucose [Moles/volume] in Blood by Automated test strip | 72516-8      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (moles/volume) | 3040151    | LOINC      | Glucose [Moles/volume] in Capillary blood               | 51596-5      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| Glucose (moles/volume) | 46236948   | LOINC      | Glucose [Moles/volume] in Serum, Plasma or Blood        | 77135-2      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 
 ## Guidance
 
