@@ -83,31 +83,30 @@ acceptable range or the next one is at least 20 % higher/lower
   See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
   In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
-
-| Category               | Concept ID | Vocabulary | Concept Name                                            | Concept Code | DD Concept Set                                                                        |
-|------------------------|------------|------------|---------------------------------------------------------|--------------|---------------------------------------------------------------------------------------|
-| Intensive Care         | 32037      | Visit      | Intensive care                                          | OMOP4822460  | N/A                                                                                   |
-| Glucose (mass/volume)  | 3004501    | LOINC      | Glucose [Mass/volume] in Serum or Plasma                | 2345-7       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3000483    | LOINC      | Glucose [Mass/volume] in Blood                          | 2339-0       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3033408    | LOINC      | Glucose [Mass/volume] in Venous blood                   | 41652-9      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 1092148    | LOINC      | Glucose [Mass/volume] in Mixed venous blood             | 104655-6     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3034962    | LOINC      | Glucose [Mass/volume] in Capillary blood by Glucometer  | 41653-7      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3031266    | LOINC      | Glucose [Mass/volume] in Arterial blood                 | 41651-1      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3004077    | LOINC      | Glucose [Mass/volume] in Capillary blood                | 32016-8      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3020491    | LOINC      | Glucose [Moles/volume] in Blood                         | 15074-8      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3001501    | LOINC      | Glucose [Moles/volume] in Capillary blood by Glucometer | 14743-9      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 1761753    | LOINC      | Glucose [Moles/volume] in Mixed venous blood            | 100746-7     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3013826    | LOINC      | Glucose [Moles/volume] in Serum or Plasma               | 14749-6      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3038515    | LOINC      | Glucose [Moles/volume] in Venous blood                  | 39480-9      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3044242    | LOINC      | Glucose [Moles/volume] in Arterial blood                | 39481-7      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=157) |
-| Glucose (mass/volume)  | 1091312    | LOINC      | Glucose [Mass/volume] in Arterial blood by Glucometer   | 104598-8     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 1092005    | LOINC      | Glucose [Mass/volume] in Venous blood by Glucometer     | 104597-0     | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3011424    | LOINC      | Glucose [Mass/volume] in Blood by Automated test strip  | 2340-8       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 3014053    | LOINC      | Glucose [Mass/volume] in Blood by Test strip manual     | 2341-6       | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (mass/volume)  | 44816672   | LOINC      | Glucose [Mass/volume] in Serum, Plasma or Blood         | 74774-1      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 43055143   | LOINC      | Glucose [Moles/volume] in Blood by Automated test strip | 72516-8      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 3040151    | LOINC      | Glucose [Moles/volume] in Capillary blood               | 51596-5      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
-| Glucose (moles/volume) | 46236948   | LOINC      | Glucose [Moles/volume] in Serum, Plasma or Blood        | 77135-2      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+<!-- inject:GlucoseMeasurements -->
+| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                |
+|------------------------------------------------------------------|------------------------------------------|-------------|-----------------------------------------------------------------------------------------------|
+| [3031266](https://athena.ohdsi.org/search-terms/terms/3031266)   | Glucose [Mass/volume] in Arterial blood  | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [1091312](https://athena.ohdsi.org/search-terms/terms/1091312)   | Glucose [Mass/volume] in Arterial blood… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3000483](https://athena.ohdsi.org/search-terms/terms/3000483)   | Glucose [Mass/volume] in Blood           | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3011424](https://athena.ohdsi.org/search-terms/terms/3011424)   | Glucose [Mass/volume] in Blood by Autom… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3014053](https://athena.ohdsi.org/search-terms/terms/3014053)   | Glucose [Mass/volume] in Blood by Test … | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3004077](https://athena.ohdsi.org/search-terms/terms/3004077)   | Glucose [Mass/volume] in Capillary blood | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3034962](https://athena.ohdsi.org/search-terms/terms/3034962)   | Glucose [Mass/volume] in Capillary bloo… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [1092148](https://athena.ohdsi.org/search-terms/terms/1092148)   | Glucose [Mass/volume] in Mixed venous b… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3004501](https://athena.ohdsi.org/search-terms/terms/3004501)   | Glucose [Mass/volume] in Serum or Plasma | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [44816672](https://athena.ohdsi.org/search-terms/terms/44816672) | Glucose [Mass/volume] in Serum, Plasma … | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3033408](https://athena.ohdsi.org/search-terms/terms/3033408)   | Glucose [Mass/volume] in Venous blood    | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [1092005](https://athena.ohdsi.org/search-terms/terms/1092005)   | Glucose [Mass/volume] in Venous blood b… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3044242](https://athena.ohdsi.org/search-terms/terms/3044242)   | Glucose [Moles/volume] in Arterial blood | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3020491](https://athena.ohdsi.org/search-terms/terms/3020491)   | Glucose [Moles/volume] in Blood          | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [43055143](https://athena.ohdsi.org/search-terms/terms/43055143) | Glucose [Moles/volume] in Blood by Auto… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3040151](https://athena.ohdsi.org/search-terms/terms/3040151)   | Glucose [Moles/volume] in Capillary blo… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3001501](https://athena.ohdsi.org/search-terms/terms/3001501)   | Glucose [Moles/volume] in Capillary blo… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [1761753](https://athena.ohdsi.org/search-terms/terms/1761753)   | Glucose [Moles/volume] in Mixed venous … | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3013826](https://athena.ohdsi.org/search-terms/terms/3013826)   | Glucose [Moles/volume] in Serum or Plas… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [46236948](https://athena.ohdsi.org/search-terms/terms/46236948) | Glucose [Moles/volume] in Serum, Plasma… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
+| [3038515](https://athena.ohdsi.org/search-terms/terms/3038515)   | Glucose [Moles/volume] in Venous blood   | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 
 ## Guidance
 

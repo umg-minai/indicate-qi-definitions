@@ -169,32 +169,79 @@ Pdelta = Pplat - PEEP
   In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
 
+| Category                        | Priority | Concept ID | Vocabulary | Concept Name                                                                                                | Concept Code | DD Concept Set                                                                                                  |
+|---------------------------------|----------|------------|------------|-------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
+| Intensive Care                  |          | 32037      | Visit      | Intensive care                                                                                              | OMOP4822460  | N/A                                                                                                             |
+| Body height                     |          | 3036277    | LOINC      | Body height                                                                                                 | 8302-2       | [Body height](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=274)                              |
+| Gender                          |          | 8532       |            | Female                                                                                                      |              | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations)     |
+| Gender                          |          | 8507       |            | Male                                                                                                        |              | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations)     |
+| IBW                             |          | 4062985    | SNOMED     | Ideal body weight                                                                                           | 170804003    | [Ideal body weight](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=284)                        |
+| ARDS                            |          | 4195694    | SNOMED     | Acute respiratory distress syndrome                                                                         | 67782005     | [ARDS](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=26)                                      |
+| Intubated (tube present)        |          | 4097216    | SNOMED     | Endotracheal tube                                                                                           | 26412008     | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299)                        |
+| Invasive mechanical ventilation |          | 37158404   | SNOMED     | Invasive mechanical ventilation                                                                             | 1258985005   | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306)          |
+| Ventilation mode (PCV)          |          |            |            | see [Ventilation Modes](ventilation-modes.md)                                                               |              | [Ventilation mode - Pressure driven (PCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=339) |
+| Ventilation mode (VCV)          |          |            |            | see [Ventilation Modes](ventilation-modes.md)                                                               |              | [Ventilation mode - Volume driven (VCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=340)   |
+| PaO2/FiO2 (Horowitz index)      |          | 3029943    | LOINC      | Horowitz index in Arterial blood                                                                            | 50984-4      | [Horowitz index](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=313)                           |
+| PaO2                            | 1        | 3027801    | LOINC      | Oxygen [Partial pressure] in Arterial blood (default)                                                       | 2703-7       | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152)                                 |
+| PaO2                            | 2        | 3022803    | LOINC      | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (temperature adjusted) | 19255-9      | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152)                                 |
+| FiO2                            |          | 4353936    | SNOMED     | Inspired oxygen concentration                                                                               | 250774007    | [FiO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=301)                                     |
+
+<!-- inject:PEEPMeasurements -->
+| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                                       |
+|------------------------------------------------------------------|------------------------------------------|-------------|----------------------------------------------------------------------------------------------------------------------|
+| [4160171](https://athena.ohdsi.org/search-terms/terms/4160171)   | Best positive end expiratory pressure    | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [42528515](https://athena.ohdsi.org/search-terms/terms/42528515) | Extrinsic PEEP Respiratory system        | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [3035822](https://athena.ohdsi.org/search-terms/terms/3035822)   | Intrinsic PEEP Respiratory system        | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [4353713](https://athena.ohdsi.org/search-terms/terms/4353713)   | Positive end expiratory pressure         | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [4216746](https://athena.ohdsi.org/search-terms/terms/4216746)   | Positive end expiratory pressure setting | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [3022875](https://athena.ohdsi.org/search-terms/terms/3022875)   | Positive end expiratory pressure settin… | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+| [42527140](https://athena.ohdsi.org/search-terms/terms/42527140) | Total PEEP Respiratory system            | False       | [Positive End-Expiratory Pressure (PEEP) (318)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+
+
 | Category | Priority | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|----------|------------|------------|--------------|--------------|----------------|
-| Intensive Care | | 32037 | Visit | Intensive care | OMOP4822460 | N/A|
-| Body height | | 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=274) |
-| Gender | | 8532 | | Female | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations) |
-| Gender | | 8507 | | Male | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations) |
-| IBW | | 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=284) |
-| ARDS | | 4195694 | SNOMED | Acute respiratory distress syndrome | 67782005 | [ARDS](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=26) |
-| Intubated (tube present) | | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299) |
-| Invasive mechanical ventilation | | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) |
-| Ventilation mode (PCV) | | | | see [Ventilation Modes](ventilation-modes.md) | | [Ventilation mode - Pressure driven (PCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=339) |
-| Ventilation mode (VCV) | | | | see [Ventilation Modes](ventilation-modes.md) | | [Ventilation mode - Volume driven (VCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=340) |
-| PaO2/FiO2 (Horowitz index) | | 3029943 | LOINC | Horowitz index in Arterial blood | 50984-4 | [Horowitz index](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=313) |
-| PaO2 | 1 | 3027801 | LOINC | Oxygen [Partial pressure] in Arterial blood (default) | 2703-7 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152) |
-| PaO2 | 2 | 3022803 | LOINC | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (temperature adjusted) | 19255-9 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152) |
-| FiO2 | | 4353936 | SNOMED | Inspired oxygen concentration | 250774007 | [FiO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=301) |
 | PEEP | 1 | 42527140 | LOINC | Total PEEP Respiratory system (total, measured) | 76247-6 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
 | PEEP | 2 | 4216746 | SNOMED | Positive end expiratory pressure setting | 416595007 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
 | PEEP | 3 | 4353713 | SNOMED | Positive end expiratory pressure (general, no information about setting/measurement) | 250854009 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
+
+| Category | Priority | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|----------|------------|------------|--------------|--------------|----------------|
 | Pplat | | 44782825 | SNOMED | Airway plateau pressure | 698822002 | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320) |
 | Pinsp | 1 | 4215838 | SNOMED | Inspiratory pressure setting [cmH2O] | 417071008 | [Inspiratory pressure setting](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=314) |
 | Pinsp | 2 | 4101694 | SNOMED | Peak inspiratory pressure [mmHg], CAVE different units, convert to cmH2O | 27913002 | [Peak inspiration pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=319) |
-| VT | 1 | 44782826 | SNOMED | Inspiratory tidal volume | 698823007 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 2 | 4108448 | SNOMED | Spontaneous tidal volume | 250816009 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 3 | 3012410 | LOINC | Tidal volume setting Ventilator | 20112-9 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 4 | 4029625 | SNOMED | Tidal volume (general, no information about setting/measurement) | 13621006 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+
+<!-- inject:TidalVolumeMeasurements -->
+| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                 |
+|------------------------------------------------------------------|------------------------------------------|-------------|------------------------------------------------------------------------------------------------|
+| [44782827](https://athena.ohdsi.org/search-terms/terms/44782827) | Expiratory tidal volume                  | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [44782826](https://athena.ohdsi.org/search-terms/terms/44782826) | Inspiratory tidal volume                 | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [4353946](https://athena.ohdsi.org/search-terms/terms/4353946)   | Mandatory tidal volume                   | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [4108448](https://athena.ohdsi.org/search-terms/terms/4108448)   | Spontaneous tidal volume                 | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [4029625](https://athena.ohdsi.org/search-terms/terms/4029625)   | Tidal volume                             | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [21490854](https://athena.ohdsi.org/search-terms/terms/21490854) | Tidal volume Ventilator --on ventilator  | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [21490752](https://athena.ohdsi.org/search-terms/terms/21490752) | Tidal volume expired Respiratory system… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [21490789](https://athena.ohdsi.org/search-terms/terms/21490789) | Tidal volume expired Respiratory system… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3011767](https://athena.ohdsi.org/search-terms/terms/3011767)   | Tidal volume expired spontaneous correc… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3020572](https://athena.ohdsi.org/search-terms/terms/3020572)   | Tidal volume expired spontaneous uncorr… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3015016](https://athena.ohdsi.org/search-terms/terms/3015016)   | Tidal volume expired spontaneous+mechan… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3009097](https://athena.ohdsi.org/search-terms/terms/3009097)   | Tidal volume expired spontaneous+mechan… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3033780](https://athena.ohdsi.org/search-terms/terms/3033780)   | Tidal volume inspired spontaneous+mecha… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3016166](https://athena.ohdsi.org/search-terms/terms/3016166)   | Tidal volume inspired spontaneous+mecha… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3021470](https://athena.ohdsi.org/search-terms/terms/3021470)   | Tidal volume inspired spontaneous+mecha… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3012410](https://athena.ohdsi.org/search-terms/terms/3012410)   | Tidal volume setting Ventilator          | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3008805](https://athena.ohdsi.org/search-terms/terms/3008805)   | Tidal volume sigh spontaneous+mechanica… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [36303816](https://athena.ohdsi.org/search-terms/terms/36303816) | Tidal volume.inspired                    | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3017594](https://athena.ohdsi.org/search-terms/terms/3017594)   | Tidal volume.spontaneous --on ventilator | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3004732](https://athena.ohdsi.org/search-terms/terms/3004732)   | Tidal volume.spontaneous+mechanical --o… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3007828](https://athena.ohdsi.org/search-terms/terms/3007828)   | Tidal volume.spontaneous+mechanical cor… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| [3017707](https://athena.ohdsi.org/search-terms/terms/3017707)   | Tidal volume.spontaneous+mechanical unc… | False       | [Tidal volume (Vt) (322)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+
+| Category | Priority | Concept ID | Vocabulary | Concept Name                                                     | Concept Code | DD Concept Set                                                                      |
+|----------|----------|------------|------------|------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------|
+| VT       | 1        | 44782826   | SNOMED     | Inspiratory tidal volume                                         | 698823007    | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| VT       | 2        | 4108448    | SNOMED     | Spontaneous tidal volume                                         | 250816009    | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| VT       | 3        | 3012410    | LOINC      | Tidal volume setting Ventilator                                  | 20112-9      | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| VT       | 4        | 4029625    | SNOMED     | Tidal volume (general, no information about setting/measurement) | 13621006     | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
 
 
 ## Guidance
