@@ -108,7 +108,7 @@ It is reached if the intaken calories are 10 % less or more than the target.
 
 <!-- inject:RenalReplacementTherapyProcedures -->
 | Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                                      |
-|------------------------------------------------------------------|------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------------------|
+|---                                                               |---                                       |---          |---                                                                                                                  |
 | [37018292](https://athena.ohdsi.org/search-terms/terms/37018292) | Continuous renal replacement therapy     | yes         | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
 | [4049845](https://athena.ohdsi.org/search-terms/terms/4049845)   | Hemodiafiltration                        | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
 | [4120120](https://athena.ohdsi.org/search-terms/terms/4120120)   | Hemodialysis                             | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
@@ -137,7 +137,7 @@ It is reached if the intaken calories are 10 % less or more than the target.
 
 <!-- inject:PhosphateMeasurements -->
 | Concept ID                                                     | Concept Name                             | Descendants | DD Concept Set                                                                                         |
-|----------------------------------------------------------------|------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
+|---                                                             |---                                       |---          |---                                                                                                     |
 | [3024232](https://athena.ohdsi.org/search-terms/terms/3024232) | Phosphate [Mass/volume] in Blood         | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
 | [3011904](https://athena.ohdsi.org/search-terms/terms/3011904) | Phosphate [Mass/volume] in Serum or Pla… | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
 | [3018913](https://athena.ohdsi.org/search-terms/terms/3018913) | Phosphate [Moles/volume] in Blood        | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
@@ -154,7 +154,7 @@ All concepts from the following insulin concept sets in the INDICATE Data Dictio
 
 <!-- inject:InsulinDrugs -->
 | Concept ID                                                       | Concept Name             | Descendants | DD Concept Set                                                                                               |
-|------------------------------------------------------------------|--------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
+|---                                                               |---                       |---          |---                                                                                                           |
 | [1567198](https://athena.ohdsi.org/search-terms/terms/1567198)   | insulin aspart, human    | yes         | [Insulin Aspart, Human (123)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=123) v1.0.1    |
 | [35602717](https://athena.ohdsi.org/search-terms/terms/35602717) | insulin degludec         | yes         | [Insulin Degludec (124)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=124) v1.0.1         |
 | [1516976](https://athena.ohdsi.org/search-terms/terms/1516976)   | insulin detemir          | yes         | [Insulin Detemir (125)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=125) v1.0.1          |
