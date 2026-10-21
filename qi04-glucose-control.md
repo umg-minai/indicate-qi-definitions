@@ -85,7 +85,7 @@ acceptable range or the next one is at least 20 % higher/lower
 
 <!-- inject:GlucoseMeasurements -->
 | Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                       |
-|------------------------------------------------------------------|------------------------------------------|-------------|------------------------------------------------------------------------------------------------------|
+|---                                                               |---                                       |---          |---                                                                                                   |
 | [3031266](https://athena.ohdsi.org/search-terms/terms/3031266)   | Glucose [Mass/volume] in Arterial blood  | no          | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) v1.1.0 |
 | [1091312](https://athena.ohdsi.org/search-terms/terms/1091312)   | Glucose [Mass/volume] in Arterial blood… | no          | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) v1.1.0 |
 | [3000483](https://athena.ohdsi.org/search-terms/terms/3000483)   | Glucose [Mass/volume] in Blood           | no          | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) v1.1.0 |

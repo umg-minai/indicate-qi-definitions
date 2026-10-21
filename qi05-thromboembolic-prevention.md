@@ -61,7 +61,7 @@ INDICATE Data Dictionary Concept IDs
 
 <!-- inject:AnticoagulationDrugs -->
 | Concept ID                                                       | Concept Name         | Descendants | DD Concept Set                                                                                         |
-|------------------------------------------------------------------|----------------------|-------------|--------------------------------------------------------------------------------------------------------|
+|---                                                               |---                   |---          |---                                                                                                     |
 | [19024063](https://athena.ohdsi.org/search-terms/terms/19024063) | acenocoumarol        | yes         | [Acenocoumarol (33)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=33) v1.0.1        |
 | [43013024](https://athena.ohdsi.org/search-terms/terms/43013024) | apixaban             | yes         | [Apixaban (34)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=34) v1.0.1             |
 | [1322207](https://athena.ohdsi.org/search-terms/terms/1322207)   | argatroban           | yes         | [Argatroban (35)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=35) v1.0.1           |

@@ -71,7 +71,7 @@ A day starts at 6:00 and ends at 22:00.
 
 <!-- inject:MobilizationProcedures -->
 | Concept ID                                                       | Concept Name                            | Descendants | DD Concept Set                                                                                   |
-|------------------------------------------------------------------|-----------------------------------------|-------------|--------------------------------------------------------------------------------------------------|
+|---                                                               |---                                      |---          |---                                                                                               |
 | [4158838](https://athena.ohdsi.org/search-terms/terms/4158838)   | Ambulation therapy                      | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
 | [1242274](https://athena.ohdsi.org/search-terms/terms/1242274)   | Assistance with getting out of bed      | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
 | [46272439](https://athena.ohdsi.org/search-terms/terms/46272439) | Assistance with mobility                | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
