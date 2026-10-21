@@ -94,8 +94,6 @@ It is reached if the intaken calories are 10 % less or more than the target.
 | [46236948](https://athena.ohdsi.org/search-terms/terms/46236948) | Glucose [Moles/volume] in Serum, Plasma… | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 | [3038515](https://athena.ohdsi.org/search-terms/terms/3038515)   | Glucose [Moles/volume] in Venous blood   | False       | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 
-
-
 | Category                            | Concept ID | Vocabulary | Concept Name                                           | Concept Code | DD Concept Set                                                                                             |
 |-------------------------------------|------------|------------|--------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------|
 | Intensive Care                      | 32037      | Visit      | Intensive care                                         | OMOP4822460  | N/A                                                                                                        |
@@ -109,19 +107,19 @@ It is reached if the intaken calories are 10 % less or more than the target.
 | Calorie intake total 24 hour        | 3026267    | LOINC      | Calorie intake total 24 hour                           | 9057-1       | [Energy intake](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=286)                       |
 
 <!-- inject:RenalReplacementTherapyProcedures -->
-| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                               |
-|------------------------------------------------------------------|------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
-| [37018292](https://athena.ohdsi.org/search-terms/terms/37018292) | Continuous renal replacement therapy     | True        | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4049845](https://athena.ohdsi.org/search-terms/terms/4049845)   | Hemodiafiltration                        | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4120120](https://athena.ohdsi.org/search-terms/terms/4120120)   | Hemodialysis                             | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4050864](https://athena.ohdsi.org/search-terms/terms/4050864)   | Hemofiltration                           | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4052538](https://athena.ohdsi.org/search-terms/terms/4052538)   | Intermittent hemodiafiltration           | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4051326](https://athena.ohdsi.org/search-terms/terms/4051326)   | Intermittent hemodialysis                | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4050862](https://athena.ohdsi.org/search-terms/terms/4050862)   | Intermittent hemodialysis with continuo… | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4051327](https://athena.ohdsi.org/search-terms/terms/4051327)   | Intermittent hemodialysis with sequenti… | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [4050865](https://athena.ohdsi.org/search-terms/terms/4050865)   | Intermittent hemofiltration              | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [619390](https://athena.ohdsi.org/search-terms/terms/619390)     | Prolonged intermittent renal replacemen… | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
-| [44783963](https://athena.ohdsi.org/search-terms/terms/44783963) | Sustained low-efficiency dialysis        | False       | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
+| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                                      |
+|------------------------------------------------------------------|------------------------------------------|-------------|---------------------------------------------------------------------------------------------------------------------|
+| [37018292](https://athena.ohdsi.org/search-terms/terms/37018292) | Continuous renal replacement therapy     | yes         | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4049845](https://athena.ohdsi.org/search-terms/terms/4049845)   | Hemodiafiltration                        | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4120120](https://athena.ohdsi.org/search-terms/terms/4120120)   | Hemodialysis                             | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4050864](https://athena.ohdsi.org/search-terms/terms/4050864)   | Hemofiltration                           | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4052538](https://athena.ohdsi.org/search-terms/terms/4052538)   | Intermittent hemodiafiltration           | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4051326](https://athena.ohdsi.org/search-terms/terms/4051326)   | Intermittent hemodialysis                | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4050862](https://athena.ohdsi.org/search-terms/terms/4050862)   | Intermittent hemodialysis with continuo… | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4051327](https://athena.ohdsi.org/search-terms/terms/4051327)   | Intermittent hemodialysis with sequenti… | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [4050865](https://athena.ohdsi.org/search-terms/terms/4050865)   | Intermittent hemofiltration              | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [619390](https://athena.ohdsi.org/search-terms/terms/619390)     | Prolonged intermittent renal replacemen… | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
+| [44783963](https://athena.ohdsi.org/search-terms/terms/44783963) | Sustained low-efficiency dialysis        | no          | [Renal replacement therapy (RRT) (298)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) v1.1.0 |
 
 | Category                  | Concept ID | Vocabulary | Concept Name                                                                                                                                                            | Concept Code | DD Concept Set                                                                                   |
 |---------------------------|------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------|
@@ -138,12 +136,12 @@ It is reached if the intaken calories are 10 % less or more than the target.
 | Renal replacement therapy | 619390     | SNOMED     | Prolonged intermittent renal replacement therapy                                                                                                                        | 895382009    | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298) |
 
 <!-- inject:PhosphateMeasurements -->
-| Concept ID                                                     | Concept Name                             | Descendants | DD Concept Set                                                                                  |
-|----------------------------------------------------------------|------------------------------------------|-------------|-------------------------------------------------------------------------------------------------|
-| [3024232](https://athena.ohdsi.org/search-terms/terms/3024232) | Phosphate [Mass/volume] in Blood         | False       | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) |
-| [3011904](https://athena.ohdsi.org/search-terms/terms/3011904) | Phosphate [Mass/volume] in Serum or Pla… | False       | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) |
-| [3018913](https://athena.ohdsi.org/search-terms/terms/3018913) | Phosphate [Moles/volume] in Blood        | False       | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) |
-| [3003458](https://athena.ohdsi.org/search-terms/terms/3003458) | Phosphate [Moles/volume] in Serum or Pl… | False       | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) |
+| Concept ID                                                     | Concept Name                             | Descendants | DD Concept Set                                                                                         |
+|----------------------------------------------------------------|------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
+| [3024232](https://athena.ohdsi.org/search-terms/terms/3024232) | Phosphate [Mass/volume] in Blood         | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
+| [3011904](https://athena.ohdsi.org/search-terms/terms/3011904) | Phosphate [Mass/volume] in Serum or Pla… | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
+| [3018913](https://athena.ohdsi.org/search-terms/terms/3018913) | Phosphate [Moles/volume] in Blood        | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
+| [3003458](https://athena.ohdsi.org/search-terms/terms/3003458) | Phosphate [Moles/volume] in Serum or Pl… | no          | [Phosphate in blood (210)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=210) v1.1.0 |
 
 | Category  | Concept ID | Vocabulary | Concept Name                                | Concept Code | DD Concept Set                                                                          |
 |-----------|------------|------------|---------------------------------------------|--------------|-----------------------------------------------------------------------------------------|
@@ -155,13 +153,13 @@ It is reached if the intaken calories are 10 % less or more than the target.
 All concepts from the following insulin concept sets in the INDICATE Data Dictionary:
 
 <!-- inject:InsulinDrugs -->
-| Concept ID                                                       | Concept Name             | Descendants | DD Concept Set                                                                                        |
-|------------------------------------------------------------------|--------------------------|-------------|-------------------------------------------------------------------------------------------------------|
-| [1567198](https://athena.ohdsi.org/search-terms/terms/1567198)   | insulin aspart, human    | True        | [Insulin Aspart, Human (123)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=123)    |
-| [35602717](https://athena.ohdsi.org/search-terms/terms/35602717) | insulin degludec         | True        | [Insulin Degludec (124)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=124)         |
-| [1516976](https://athena.ohdsi.org/search-terms/terms/1516976)   | insulin detemir          | True        | [Insulin Detemir (125)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=125)          |
-| [1502905](https://athena.ohdsi.org/search-terms/terms/1502905)   | insulin glargine         | True        | [Insulin Glargine (126)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=126)         |
-| [1544838](https://athena.ohdsi.org/search-terms/terms/1544838)   | insulin glulisine, human | True        | [Insulin Glulisine, Human (127)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=127) |
+| Concept ID                                                       | Concept Name             | Descendants | DD Concept Set                                                                                               |
+|------------------------------------------------------------------|--------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
+| [1567198](https://athena.ohdsi.org/search-terms/terms/1567198)   | insulin aspart, human    | yes         | [Insulin Aspart, Human (123)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=123) v1.0.1    |
+| [35602717](https://athena.ohdsi.org/search-terms/terms/35602717) | insulin degludec         | yes         | [Insulin Degludec (124)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=124) v1.0.1         |
+| [1516976](https://athena.ohdsi.org/search-terms/terms/1516976)   | insulin detemir          | yes         | [Insulin Detemir (125)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=125) v1.0.1          |
+| [1502905](https://athena.ohdsi.org/search-terms/terms/1502905)   | insulin glargine         | yes         | [Insulin Glargine (126)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=126) v1.0.1         |
+| [1544838](https://athena.ohdsi.org/search-terms/terms/1544838)   | insulin glulisine, human | yes         | [Insulin Glulisine, Human (127)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=127) v1.0.1 |
 
 | Concept Set Name | Number of Concepts | DD Concept Set |
 |------------------|--------------------|----------------|

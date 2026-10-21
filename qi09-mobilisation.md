@@ -69,6 +69,20 @@ A day starts at 6:00 and ends at 22:00.
 | Mobilization | 4327195 | SNOMED | Mobilization | 74923002 | [Mobilization](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) |
 
 
+<!-- inject:MobilizationProcedures -->
+| Concept ID                                                       | Concept Name                            | Descendants | DD Concept Set                                                                                   |
+|------------------------------------------------------------------|-----------------------------------------|-------------|--------------------------------------------------------------------------------------------------|
+| [4158838](https://athena.ohdsi.org/search-terms/terms/4158838)   | Ambulation therapy                      | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [1242274](https://athena.ohdsi.org/search-terms/terms/1242274)   | Assistance with getting out of bed      | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [46272439](https://athena.ohdsi.org/search-terms/terms/46272439) | Assistance with mobility                | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [37016972](https://athena.ohdsi.org/search-terms/terms/37016972) | Assistance with mobility in bed         | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [46272440](https://athena.ohdsi.org/search-terms/terms/46272440) | Assistance with walking using device    | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [46272565](https://athena.ohdsi.org/search-terms/terms/46272565) | Progressive mobility                    | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [46271859](https://athena.ohdsi.org/search-terms/terms/46271859) | Promotion of physical mobility          | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [46271857](https://athena.ohdsi.org/search-terms/terms/46271857) | Promotion of walking using mobility aid | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [4204159](https://athena.ohdsi.org/search-terms/terms/4204159)   | Walking practice                        | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+| [4040262](https://athena.ohdsi.org/search-terms/terms/4040262)   | Walking with patient - mobilization     | no          | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0 |
+
 
 ## Initial Population
 
