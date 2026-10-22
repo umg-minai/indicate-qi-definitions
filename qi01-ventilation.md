@@ -66,9 +66,9 @@ None.
 
 ### ARDS severity
 
-- mild:     200 < PaO2/FiO2 <= 300 mmHg and PEEP >= 5 cmH2O
-- moderate: 100 < PaO2/FiO2 <= 200 mmHg and PEEP >= 5 cmH2O
-- severe:         PaO2/FiO2 <= 100 mmHg and PEEP >= 5 cmH2O
+- mild:     200 mmHg < PaO2/FiO2 <= 300 mmHg and PEEP >= 5 cmH2O
+- moderate: 100 mmHg < PaO2/FiO2 <= 200 mmHg and PEEP >= 5 cmH2O
+- severe:              PaO2/FiO2 <= 100 mmHg and PEEP >= 5 cmH2O
 
 If no PaO2 is given in the last 6 hours we assume a mild ARDS.
 
@@ -221,9 +221,9 @@ PEEPtable:
 current timepoint
         PaO2/FiO2 = LOCF(PaO2)/FiO2
     ELSE IF PaO2/FiO2 is not given AND PaO2 is missing or older than 6 hours
-        PaO2/FiO2 = 300
+        PaO2/FiO2 = 300 mmHg
 
-    IF PaO2/FiO2 > 200
+    IF PaO2/FiO2 > 200 mmHg
         low PEEP table
     ELSE
         high PEEP table
@@ -254,9 +254,9 @@ IF ALL(
     AND
     4 * IBW <= VT <= 8 * IBW
     AND
-    Pplat <= 30
+    Pplat <= 30 cmH2O
     AND
-    Pdelta <= 14
+    Pdelta <= 14 cmH2O
 )
 ```
 
