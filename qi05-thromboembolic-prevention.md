@@ -95,6 +95,8 @@ INDICATE Data Dictionary Concept IDs
 | [1310149](https://athena.ohdsi.org/search-terms/terms/1310149)   | warfarin             | yes         | [Warfarin (61)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=61) v1.0.1             |
 | [40799186](https://athena.ohdsi.org/search-terms/terms/40799186) | Ximelagatran         | yes         | [Ximelagatran (62)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=62) v1.0.1         |
 
+All concepts from the following anticoagulant concept sets in the INDICATE Data Dictionary:
+
 | Concept Set Name     | Number of Concepts | DD Concept Set |
 |----------------------|--------------------|----------------|
 | Acenocoumarol        | 2                  | [Link](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=33) |

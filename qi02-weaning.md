@@ -69,20 +69,20 @@ We expect a "Trial of spontaneous breathing" entry.
 |---------------------------------|------------|------------|-----------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------|
 | Extubation                      | 4231838    | SNOMED     | Inadvertent tracheal extubation (inadvertent) | 405639008    | [Extubation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303)                      |
 
-<!-- inject:InvasiveMechanicalVentilation,EndotrachealTube,Extubation,TrialOfSpontaneousBreathing -->
+<!-- inject:EndotrachealTube,InvasiveMechanicalVentilation,TrialOfSpontaneousBreathing,Extubation -->
 | Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                                      |
+|---                                                               |---                                       |---          |---                                                                                                                  |
+| [4097216](https://athena.ohdsi.org/search-terms/terms/4097216)   | Endotracheal tube                        | yes         | [Endotracheal tube (299)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299) v1.1.0               |
 |---                                                               |---                                       |---          |---                                                                                                                  |
 | [37158404](https://athena.ohdsi.org/search-terms/terms/37158404) | Invasive mechanical ventilation          | no          | [Invasive mechanical ventilation (306)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) v1.1.0 |
 |---                                                               |---                                       |---          |---                                                                                                                  |
-| [4097216](https://athena.ohdsi.org/search-terms/terms/4097216)   | Endotracheal tube                        | yes         | [Endotracheal tube (299)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299) v1.1.0               |
+| [4308797](https://athena.ohdsi.org/search-terms/terms/4308797)   | Trial of spontaneous breathing           | no          | [Trial of spontaneous breathing (309)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=309) v1.0.0  |
 |---                                                               |---                                       |---          |---                                                                                                                  |
 | [4148972](https://athena.ohdsi.org/search-terms/terms/4148972)   | Extubation of trachea                    | no          | [Extubation (303)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) v1.1.0                      |
 | [4231838](https://athena.ohdsi.org/search-terms/terms/4231838)   | Inadvertent tracheal extubation          | no          | [Extubation (303)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) v1.1.0                      |
 | [4150627](https://athena.ohdsi.org/search-terms/terms/4150627)   | Removal of endotracheal tube             | no          | [Extubation (303)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) v1.1.0                      |
 | [4012607](https://athena.ohdsi.org/search-terms/terms/4012607)   | Removal of tracheostomy tube             | no          | [Extubation (303)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) v1.1.0                      |
 | [4195943](https://athena.ohdsi.org/search-terms/terms/4195943)   | Ventilating tube removal by another phy… | no          | [Extubation (303)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=303) v1.1.0                      |
-|---                                                               |---                                       |---          |---                                                                                                                  |
-| [4308797](https://athena.ohdsi.org/search-terms/terms/4308797)   | Trial of spontaneous breathing           | no          | [Trial of spontaneous breathing (309)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=309) v1.0.0  |
 
 ## Guidance
 
