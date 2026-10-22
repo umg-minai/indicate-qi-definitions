@@ -31,21 +31,16 @@ or equal 14 cmH2O.
 
 ## Justification
 
-Invasive mechanical ventilation with extreme parameters
-is associated with increased mortality in patients with ARDS.
+- Invasive mechanical ventilation with extreme parameters
+  is associated with increased mortality in patients with ARDS.
 
-Fichtner et al., recommendations 32-2025/33-2025
-PEEP
+- Fichtner et al., recommendations 32-2025/33-2025: PEEP
 
-Fichtner et al., recommendation 40-2025
-VT around 6 mL/kg IBW
+- Fichtner et al., recommendation 40-2025: VT around 6 mL/kg IBW
 
-Fichtner et al., recommendation 42-2025
-Pplat <= 30 cmH2O
+- Fichtner et al., recommendation 42-2025: Pplat <= 30 cmH2O
 
-Fichtner et al., recommendation 44-2025
-Pdelta <= 14 cmH2O
-
+- Fichtner et al., recommendation 44-2025: Pdelta <= 14 cmH2O
 
 ## Measuring Score
 
@@ -66,9 +61,9 @@ None.
 
 ### ARDS severity
 
-- mild:     200 mmHg < PaO2/FiO2 <= 300 mmHg and PEEP >= 5 cmH2O
-- moderate: 100 mmHg < PaO2/FiO2 <= 200 mmHg and PEEP >= 5 cmH2O
-- severe:              PaO2/FiO2 <= 100 mmHg and PEEP >= 5 cmH2O
+- mild:     `200 mmHg < PaO2/FiO2 <= 300 mmHg and PEEP >= 5 cmH2O`
+- moderate: `100 mmHg < PaO2/FiO2 <= 200 mmHg and PEEP >= 5 cmH2O`
+- severe:              `PaO2/FiO2 <= 100 mmHg and PEEP >= 5 cmH2O`
 
 If no PaO2 is given in the last 6 hours we assume a mild ARDS.
 
@@ -105,10 +100,10 @@ If the entry IBW is given we chose the most recent one.
 
 If it is missing
 we calculate the ideal body weight (IBW) based on the Devine formula:
-- women: IBW = 45.5 [kg] + 0.91 [kg] * (body height [cm] - 152.4)
-- men:   IBW = 50 [kg] + 0.91 [kg] * (body height [cm] - 152.4)
+- women: `IBW = 45.5 [kg] + 0.91 [kg] * (body height [cm] - 152.4)`
+- men:   `IBW = 50 [kg] + 0.91 [kg] * (body height [cm] - 152.4)`
 - if the gender is not available:
-         IBW = 47.75 [kg] + 0.91 [kg] * (body height [cm] - 152.4)
+         `IBW = 47.75 [kg] + 0.91 [kg] * (body height [cm] - 152.4)`
 
 The IBW is calculated once for each patient and used for all
 calculations.
@@ -166,11 +161,12 @@ Pdelta = Pplat - PEEP
 ## Mapping
 
 **Notes**:
-* If more than one concepts are available at a specific time points the one with
-the highest priority (lowest number) should be used.
+* If more than one concepts are available at a specific time points the one with the highest priority (lowest number) should be used.
 * ARDS Changed from 45552897 (ICD10 Code J80 which is a non-standard OMOP code) to 4195694
 * Gender is encoded in `person` table, see [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+* Identify intensive care episodes using the Intensive Care concept (32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
 
 | Category | Priority | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
@@ -234,11 +230,13 @@ recommended PEEP:
 
 ## Initial Population
 
+```
 All critically ill patients that are 18 years or older
     AND ventilation mode IN (VCV OR PCV from ventilation-modes.md)
     AND are intubated
     AND an ARDS is diagnosed
 during the observation period.
+```
 
 Note: (ventilation mode IN (VCV OR PCV)) is false if no mechanical ventilation is performed.
 
@@ -287,8 +285,8 @@ A higher ratio indicates improvement.
 
 ## References
 
-Fichtner et al. 2025
-"S3-Leitlinie Invasive Beatmung und Einsatz extrakorporaler Verfahren bei akuter respiratorischer Insuffizienz"
+- Fichtner et al. 2025
+  "S3-Leitlinie Invasive Beatmung und Einsatz extrakorporaler Verfahren bei akuter respiratorischer Insuffizienz"
 
 
 ## Comments

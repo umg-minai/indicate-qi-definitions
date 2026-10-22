@@ -48,9 +48,16 @@ None.
 
 ## Mapping
 
+**Notes:**
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
+
 INDICATE Data Dictionary Concept IDs
 
-All concepts from the following anticoagulant concept sets in the INDICATE Data Dictionary:
+| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
+|----------|------------|------------|--------------|--------------|----------------|
+| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
 
 | Concept Set Name     | Number of Concepts | DD Concept Set |
 |----------------------|--------------------|----------------|
@@ -86,14 +93,6 @@ All concepts from the following anticoagulant concept sets in the INDICATE Data 
 | Ximelagatran         | 1                  | [Link](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=62) |
 | Certoparin           | 9                  | [Link](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=341) |
 
-
-**Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
-
-
-| Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
-|----------|------------|------------|--------------|--------------|----------------|
-| Intensive Care | 32037 | Visit | Intensive care | OMOP4822460 | N/A |
 
 ## Guidance
 
@@ -137,7 +136,7 @@ A higher ratio indicates improvement.
 
 ## References
 
-Arabi, Y.M., Mehta, S. Venous thromboprophylaxis in the ICU: navigating evidence, risk, and practice gaps. Intensive Care Med 51, 1508–1510 (2025). https://doi.org/10.1007/s00134-025-08009-6
+- Arabi, Y.M., Mehta, S. Venous thromboprophylaxis in the ICU: navigating evidence, risk, and practice gaps. Intensive Care Med 51, 1508–1510 (2025). https://doi.org/10.1007/s00134-025-08009-6
 
 
 ## Comments

@@ -51,9 +51,9 @@ None.
 ### 8-hour shift
 
 Each day is divided into 3 shifts/periods per days:
-    - 06:00:00 to 13:59:59
-    - 14:00:00 to 21:59:59
-    - 22:00:00 to 05:59:59
+- 06:00:00 to 13:59:59
+- 14:00:00 to 21:59:59
+- 22:00:00 to 05:59:59
 
 The first and last period of the hospital/intensive care unit stay are ignored
 if less than 8 hours.
@@ -94,7 +94,9 @@ It is just important that these assessments were done at a given time point.
 ## Mapping
 
 **Notes**:
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
 TODO: 36684829 (RASS) should be removed
 | Category       | Concept ID | Vocabulary | Concept Name                                                      | Concept Code     | DD Concept Set                                                                                                   |
@@ -193,7 +195,7 @@ A higher ratio indicates improvement.
 
 ## References
 
-S3-Leitlinie Analgesie, Sedierung und Delirmanagement in der Intensivmedizin (DAS-Leitlinie)
+- S3-Leitlinie Analgesie, Sedierung und Delirmanagement in der Intensivmedizin (DAS-Leitlinie)
 
 
 ## Comments

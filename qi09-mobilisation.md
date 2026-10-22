@@ -58,9 +58,9 @@ A day starts at 6:00 and ends at 22:00.
 ## Mapping
 
 **Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
-
-
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
@@ -121,8 +121,8 @@ A higher ratio indicates improvement.
 
 ## References
 
-Kumpf et al. 2023 Intensivmedizinische Qualitätsindikatoren für Deutschland
-DOI: 10.19224/ai2023.333
+- Kumpf et al. 2023 Intensivmedizinische Qualitätsindikatoren für Deutschland
+  [DOI: 10.19224/ai2023.333](https://doi.org/10.19224/ai2023.333)
 
 
 ## Comments

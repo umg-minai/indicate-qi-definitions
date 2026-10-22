@@ -65,8 +65,9 @@ It is reached if the intaken calories are 10 % less or more than the target.
 ## Mapping
 
 **Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
-
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
 
 | Category                            | Concept ID | Vocabulary | Concept Name                                           | Concept Code | DD Concept Set                                                                                             |
@@ -112,12 +113,9 @@ counter is reset at a given time (e.g. every morning at 6:00)
 ## Guidance
 
 The calorie target should be
-a) The `minimal_dataset` defines an "energy requirement" item which should be
-used if available (may be based on indirect calorimetry, carbon dioxide
-production rate or formulas).
-b) continuously estimated by the carbon dioxide production rate (VCO2)
-measured by the ventilator - the median of the last 24 hours should be used.
-c) estimated using a formula.
+1. The `minimal_dataset` defines an "energy requirement" item which should be used if available (may be based on indirect calorimetry, carbon dioxide production rate or formulas).
+2. Continuously estimated by the carbon dioxide production rate (VCO2) measured by the ventilator -- the median of the last 24 hours should be used.
+3. Estimated using a formula.
 
 The calorie target depends on the body-mass-index (BMI) of the patient.
 
@@ -254,11 +252,11 @@ A higher ratio indicates improvement.
 
 ## References
 
-Stapel et al. Critical Care (2015) 19:370
-DOI 10.1186/s13054-015-1087-2
+- Stapel et al. Critical Care (2015) 19:370
+  DOI 10.1186/s13054-015-1087-2
 
-Elke et al.
-DGEM-Leitlinie: „Klinische Ernährung in der Intensivmedizin“
+- Elke et al.
+  DGEM-Leitlinie: „Klinische Ernährung in der Intensivmedizin“
 
 
 ## Comments

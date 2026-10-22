@@ -69,8 +69,9 @@ the CRBSI incidence and VAP incidence.
 ## Mapping
 
 **Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
-
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
 | Category | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
 |----------|------------|------------|--------------|--------------|----------------|
@@ -146,11 +147,10 @@ A lower incidence indicates improvement.
 
 ## References
 
-Rademacher et al. 2024
-S3-Leitlinie Epidemiologie, Diagnostik und Therapie erwachsener Patienten mit nosokomialer
-Pneumonie
+- Rademacher et al. 2024
+  S3-Leitlinie Epidemiologie, Diagnostik und Therapie erwachsener Patienten mit nosokomialer Pneumonie
 
-KRINKO 2017
-https://www.rki.de/DE/Themen/Infektionskrankheiten/Krankenhaushygiene/KRINKO/Empfehlungen-der-KRINKO/Device-assoziierte-postoperative-Infektionen/Tabelle_Gefaesskath_Rili.html
+- KRINKO 2017
+  https://www.rki.de/DE/Themen/Infektionskrankheiten/Krankenhaushygiene/KRINKO/Empfehlungen-der-KRINKO/Device-assoziierte-postoperative-Infektionen/Tabelle_Gefaesskath_Rili.html
 
 ## Comments

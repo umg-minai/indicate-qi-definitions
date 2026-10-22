@@ -50,7 +50,9 @@ We expect a "Trial of spontaneous breathing" entry.
 ## Mapping
 
 **Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 
 
 | Category                        | Concept ID | Vocabulary | Concept Name                                  | Concept Code | DD Concept Set                                                                                         |
@@ -77,11 +79,12 @@ is less than 24 hours.
 
 ## Initial Population
 
+```
 All critically ill patients that are 18 years or older
     AND mechanical ventilated for at least 48 hours
     AND are intubated
 during the observation period.
-
+```
 
 ## Numerator
 
@@ -89,10 +92,11 @@ For each 24 hour period starting at 24 hours after the beginning of
 mechanical ventilation there should be at least one period
 with
 
+```
 "Trial of spontaneous breathing"
 OR
 (Extubation OR no mechanical ventilation for >= 5 [min])
-
+```
 
 ## Numerator Exclusion
 
@@ -121,8 +125,8 @@ A higher ratio indicates improvement.
 
 ## References
 
-Fichtner et al. 2025
-"S3-Leitlinie Invasive Beatmung und Einsatz extrakorporaler Verfahren bei akuter respiratorischer Insuffizienz"
+- Fichtner et al. 2025
+  "S3-Leitlinie Invasive Beatmung und Einsatz extrakorporaler Verfahren bei akuter respiratorischer Insuffizienz"
 
 
 ## Comments

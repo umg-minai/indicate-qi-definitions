@@ -48,7 +48,9 @@ None.
 ## Mapping
 
 **Notes:**
-* Identify intensive care episodes using the Intensive Care concept (32037). See [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations). In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
+* Identify intensive care episodes using the concept [Intensive Care (32037)](https://athena.ohdsi.org/search-terms/terms/32037).
+  See [INDICATE Mapping recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations).
+  In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence) with `visit_type_concept_id = 32037`.
 * "Decision authority documented" is satisfied by either the designated decision-maker (LOINC LA11786-3) or an active healthcare surrogate (SNOMED 762209), see [issue #10](https://github.com/umg-minai/indicate-qi-definitions/issues/10).
 
 | Category                               | Concept ID | Vocabulary | Concept Name                                  | Concept Code     | DD Concept Set                                                                                       |
