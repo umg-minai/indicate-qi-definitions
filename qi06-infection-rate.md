@@ -93,6 +93,16 @@ the CRBSI incidence and VAP incidence.
 | Invasive ventilation | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) |
 | VAP | 259992 | SNOMED | Ventilator associated pneumonia | 429271009 | [Ventilator-associated pneumonia](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=32) |
 
+<!-- inject:CatheterInfection,CentralVenousCatheter,InvasiveMechanicalVentilation,VentilaorAssociatedPneumonia -->
+| Concept ID                                                       | Concept Name                             | Descendants | DD Concept Set                                                                                                      |
+|---                                                               |---                                       |---          |---                                                                                                                  |
+| [43021283](https://athena.ohdsi.org/search-terms/terms/43021283) | Infection associated with vascular devi… | yes         | [Catheter infection (31)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) v1.1.0                |
+|---                                                               |---                                       |---          |---                                                                                                                  |
+| [4179206](https://athena.ohdsi.org/search-terms/terms/4179206)   | Central venous catheter                  | yes         | [Central venous catheter (291)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=291) v1.2.0         |
+|---                                                               |---                                       |---          |---                                                                                                                  |
+| [37158404](https://athena.ohdsi.org/search-terms/terms/37158404) | Invasive mechanical ventilation          | no          | [Invasive mechanical ventilation (306)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) v1.1.0 |
+|---                                                               |---                                       |---          |---                                                                                                                  |
+| [259992](https://athena.ohdsi.org/search-terms/terms/259992)     | Ventilator associated pneumonia          | no          | [Ventilator-associated pneumonia (32)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=32) v1.1.0   |
 
 ## Guidance
 
