@@ -31,13 +31,13 @@ or equal 14 cmH2O.
 
 ## Justification
 
-Invasive mechanical ventilation with extrem parameters
+Invasive mechanical ventilation with extreme parameters
 is associated with increased mortality in patients with ARDS.
 
 Fichtner et al., recommendations 32-2025/33-2025
 PEEP
 
-Fichtner et al., recomendation 40-2025
+Fichtner et al., recommendation 40-2025
 VT around 6 mL/kg IBW
 
 Fichtner et al., recommendation 42-2025
@@ -134,8 +134,8 @@ We use the main driving force to differentiate between them.
 - PCV
 - VCV-AF, volume-controlled ventilation-auto flow
 - PC-AC, pressure-controlled, assist-control
-- SIMV, synchronized intermittent mandatory ventilation (pressure cycled, if not explicitely given assume VCV)
-- SIMV+PS, synchronized intermittent mandatory ventilation plus pressure support (pressure cycled, if not explicitely given assume VCV)
+- SIMV, synchronized intermittent mandatory ventilation (pressure cycled, if not explicitly given assume VCV)
+- SIMV+PS, synchronized intermittent mandatory ventilation plus pressure support (pressure cycled, if not explicitly given assume VCV)
 - CPAP+PS, continuous positive airway pressure plus pressure support
 - BIPAP/BILEVEL, biphasic positive airway pressure
 - APRV, airway pressure release ventilation
@@ -208,7 +208,7 @@ hourly.
 
 If the PaO2/FiO2 ratio is not available it has to be calculated as follows:
 
-The PaO2 is measured irregulary in an arterial blood gas analysis.
+The PaO2 is measured irregularly in an arterial blood gas analysis.
 We assume that ventilated patients have a blood gas analysis every 4-6 hours.
 The last PaO2 has to be taken for the calculation of PaO2/FiO2 ratio
 (last observation carried forward, LOCF).

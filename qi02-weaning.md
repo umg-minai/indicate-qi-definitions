@@ -18,7 +18,7 @@ Weaning from mechanical ventilation.
 ## Description
 
 The duration of mechanical ventilation should be as short as possible.
-Daily spontaneus breathing trial seem to be important for a fast weaning.
+Daily spontaneous breathing trial seem to be important for a fast weaning.
 
 
 ## Justification
@@ -42,7 +42,7 @@ None.
 
 ## Definitions
 
-There is not a international definition of spontaneus breathing trial.
+There is not a international definition of spontaneous breathing trial.
 
 We expect a "Trial of spontaneous breathing" entry.
 

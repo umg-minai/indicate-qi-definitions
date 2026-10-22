@@ -23,7 +23,7 @@ Critically ill adult ICU patients should be mobilised at least once per eligible
 
 ## Justification
 
-Early mobilization has been well established to reduce the duration
+Early mobilisation has been well established to reduce the duration
 of mechanical ventilation and shorten ICU length of stay.
 Additional evidence suggests that it may yield lower delirium rates,
 improved muscle strength and functional independence
@@ -81,7 +81,7 @@ during the observation period.
 
 At least once per day there has to be
 
-Mobilization
+Mobilisation
 
 
 ## Numerator Exclusion
@@ -91,7 +91,7 @@ incomplete time period after the last occurrence of 22:00
 AND
 all 6:00 to 22:00 time periods with an
 
-Order to not mobilize
+Order to not mobilise
 
 
 ## Denominator
@@ -106,7 +106,7 @@ incomplete time period after the last occurrence of 22:00
 AND
 all 6:00 to 22:00 time periods with an
 
-Order to not mobilize
+Order to not mobilise
 
 
 ## Expected

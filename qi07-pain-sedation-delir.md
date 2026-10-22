@@ -199,5 +199,5 @@ S3-Leitlinie Analgesie, Sedierung und Delirmanagement in der Intensivmedizin (DA
 ## Comments
 
 The minimal dataset contains some sedative drugs, we could evaluate whether a
-RASS -4 is followed by a decreasing in sedative drugs
+RASS -4 is followed by a decrease in sedative drugs.
 However, opioids and NSAIDs are missing, so we can't do this for pain.
