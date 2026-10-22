@@ -53,7 +53,7 @@ None.
 
 ### 8-hour shift
 
-Each day is divided into 3 shifts/periods per days:
+Each day is divided into 3 shifts/periods:
     - 06:00:00 to 13:59:59
     - 14:00:00 to 21:59:59
     - 22:00:00 to 05:59:59
