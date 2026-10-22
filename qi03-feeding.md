@@ -187,14 +187,11 @@ CTDi:
         AND maximum insulin dose on Day (i - 1) <= 4 IE/h
         0.25 * ICT
     ELSE IF maximum insulin dose on Day (i - 1) < 2 IE/h
-        AND CTD(i-1) < ICT
-        CTD(i-1) + 0.25 * ICT
+        Min(CTD(i-1) + 0.25 * ICT, ICT)
     ELSE IF (maximum insulin dose on Day (i - 1) >= 2 IE/h AND <= 4 IE/h)
-        AND CTD(i-1) > 0
-        CTD(i-1) - 0.25 * ICT
+        Max(CTD(i-1) - 0.25 * ICT, 0)
     ELSE IF maximum insulin dose on Day (i - 1) > 4 IE/h
-        AND CTD(i-1) > 0
-        CTD(i-1) - 0.5 * ICT
+        Max(CTD(i-1) - 0.5 * ICT, 0)
 ```
 
 A day is defined as full period from 6:00 to 5:59 on the next day.
