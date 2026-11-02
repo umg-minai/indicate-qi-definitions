@@ -241,9 +241,11 @@ during the observation period.
 
 Notes:
 * (ventilation mode IN (VCV OR PCV)) is false if no mechanical ventilation is performed.
-* In the initial population condition, PaO2 and FiO2 measurements are subject to the following conditions
-  * The PaO2 measurement and the FiO2 measurement from which the PaO2/FiO2 fraction is computed must be no more than 1 hour apart temporally
-  * The measurements from which the PaO2/FiO2 fraction is computed must occur in the same observation period as the observations regarding ventilation mode and intubation
+* When the initial population criterion is evaluated for a time `t`, the calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints. Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
+  * At time `t_p`, the patient has to be ventilated and intubated as defined above
+  * For the selected PaO2 measurement `t_p ≤ t` and `t - t_p` is minimal among all PaO2 measurements
+  * For the selected FiO2 measurement `t_f ≤ t` and `t - t_f` is minimal among all FiO2 measurements which also fulfill the next condition
+  * `(t_p - 60 min) ≤ t_f ≤ t_p`
 
 ## Numerator
 
