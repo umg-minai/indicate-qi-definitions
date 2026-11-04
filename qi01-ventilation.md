@@ -109,47 +109,10 @@ The IBW is calculated once for each patient and used for all
 calculations.
 If multiple body height entries are given we chose the most recent one.
 
-### Ventilation modes
-
-Historically, ventilation modes have been divided into
-volume-controlled and pressure-controlled modes.
-The decisive factor here is which parameter is set or limited.
-Today, there are a variety of modes that combine both methods.
-We use the main driving force to differentiate between them.
-
-#### Volume driven (VCV)
-
-- VCV
-- CMV, continuous mandatory ventilation
-- SIMV, synchronized intermittent mandatory ventilation (volume cycled)
-- SIMV+PS, synchronized intermittent mandatory ventilation plus pressure support (volume cycled)
-
-#### Pressure driven (PCV)
-
-- PCV
-- VCV-AF, volume-controlled ventilation-auto flow
-- PC-AC, pressure-controlled, assist-control
-- SIMV, synchronized intermittent mandatory ventilation (pressure cycled, if not explicitly given assume VCV)
-- SIMV+PS, synchronized intermittent mandatory ventilation plus pressure support (pressure cycled, if not explicitly given assume VCV)
-- CPAP+PS, continuous positive airway pressure plus pressure support
-- BIPAP/BILEVEL, biphasic positive airway pressure
-- APRV, airway pressure release ventilation
-
-(these list may be incomplete)
-
-
 ### Plateau pressure
 
-Plateau pressure is always defined for VCV mode. When run in PCV mode, only some ventilation devices record Pplat.
-For a device in PCV mode that does not record Pplat, we will use the inspiratory pressure (Pinsp).
-
-```
-Pplat:
-    IF Pplat IS MISSING AND ventilation mode IS PCV
-        Pinsp
-    ELSE
-        Pplat
-```
+Not all ventilation devices record the plateau pressure (Pplat) in all ventilation modes.
+If Pplat measurements are not available for a given patient and time period, the quality indicator cannot be computed for that time period.
 
 ### Pressure difference
 
@@ -169,32 +132,37 @@ Pdelta = Pplat - PEEP
   In CDM, ICU stays should be represented as a [`VISIT_OCCURRENCE`](https://ohdsi.github.io/CommonDataModel/cdm54.html#visit_occurrence)) with `visit_type_concept_id = 32037`.
 
 
-| Category | Priority | Concept ID | Vocabulary | Concept Name | Concept Code | DD Concept Set |
-|----------|----------|------------|------------|--------------|--------------|----------------|
-| Intensive Care | | 32037 | Visit | Intensive care | OMOP4822460 | N/A|
-| Body height | | 3036277 | LOINC | Body height | 8302-2 | [Body height](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=274) |
-| Gender | | 8532 | | Female | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations) |
-| Gender | | 8507 | | Male | | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations) |
-| IBW | | 4062985 | SNOMED | Ideal body weight | 170804003 | [Ideal body weight](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=284) |
-| ARDS | | 4195694 | SNOMED | Acute respiratory distress syndrome | 67782005 | [ARDS](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=26) |
-| Intubated (tube present) | | 4097216 | SNOMED | Endotracheal tube | 26412008 | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299) |
-| Invasive mechanical ventilation | | 37158404 | SNOMED | Invasive mechanical ventilation | 1258985005 | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) |
-| Ventilation mode (PCV) | | | | see [Ventilation Modes](ventilation-modes.md) | | [Ventilation mode - Pressure driven (PCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=339) |
-| Ventilation mode (VCV) | | | | see [Ventilation Modes](ventilation-modes.md) | | [Ventilation mode - Volume driven (VCV)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=340) |
-| PaO2/FiO2 (Horowitz index) | | 3029943 | LOINC | Horowitz index in Arterial blood | 50984-4 | [Horowitz index](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=313) |
-| PaO2 | 1 | 3027801 | LOINC | Oxygen [Partial pressure] in Arterial blood (default) | 2703-7 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152) |
-| PaO2 | 2 | 3022803 | LOINC | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (temperature adjusted) | 19255-9 | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152) |
-| FiO2 | | 4353936 | SNOMED | Inspired oxygen concentration | 250774007 | [FiO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=301) |
-| PEEP | 1 | 42527140 | LOINC | Total PEEP Respiratory system (total, measured) | 76247-6 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
-| PEEP | 2 | 4216746 | SNOMED | Positive end expiratory pressure setting | 416595007 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
-| PEEP | 3 | 4353713 | SNOMED | Positive end expiratory pressure (general, no information about setting/measurement) | 250854009 | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318) |
-| Pplat | | 44782825 | SNOMED | Airway plateau pressure | 698822002 | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320) |
-| Pinsp | 1 | 4215838 | SNOMED | Inspiratory pressure setting [cmH2O] | 417071008 | [Inspiratory pressure setting](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=314) |
-| Pinsp | 2 | 4101694 | SNOMED | Peak inspiratory pressure [mmHg], CAVE different units, convert to cmH2O | 27913002 | [Peak inspiration pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=319) |
-| VT | 1 | 44782826 | SNOMED | Inspiratory tidal volume | 698823007 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 2 | 4108448 | SNOMED | Spontaneous tidal volume | 250816009 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 3 | 3012410 | LOINC | Tidal volume setting Ventilator | 20112-9 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
-| VT | 4 | 4029625 | SNOMED | Tidal volume (general, no information about setting/measurement) | 13621006 | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322) |
+| Category                        | Priority | Concept ID | Vocabulary | Concept Name                                                                                                | Concept Code | DD Concept Set                                                                                                  |
+|---------------------------------|----------|------------|------------|-------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
+| Intensive Care                  |          | 32037      | Visit      | Intensive care                                                                                              | OMOP4822460  | N/A                                                                                                             |
+| Body height                     |          | 3036277    | LOINC      | Body height                                                                                                 | 8302-2       | [Body height](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=274)                              |
+| Gender                          |          | 8532       |            | Female                                                                                                      |              | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations)     |
+| Gender                          |          | 8507       |            | Male                                                                                                        |              | [INDICATE Mapping Recommendations](https://indicate-eu.github.io/data-dictionary/#/mapping-recommendations)     |
+| IBW                             |          | 4062985    | SNOMED     | Ideal body weight                                                                                           | 170804003    | [Ideal body weight](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=284)                        |
+| ARDS                            |          | 4195694    | SNOMED     | Acute respiratory distress syndrome                                                                         | 67782005     | [ARDS](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=26)                                      |
+| Intubated (tube present)        |          | 4097216    | SNOMED     | Endotracheal tube                                                                                           | 26412008     | [Endotracheal tube](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=299)                        |
+| Invasive mechanical ventilation |          | 37158404   | SNOMED     | Invasive mechanical ventilation                                                                             | 1258985005   | [Invasive mechanical ventilation](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306)          |
+| PaO2/FiO2 (Horowitz index)      |          | 3029943    | LOINC      | Horowitz index in Arterial blood                                                                            | 50984-4      | [Horowitz index](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=313)                           |
+| PaO2                            | 1        | 3027801    | LOINC      | Oxygen [Partial pressure] in Arterial blood (default)                                                       | 2703-7       | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152)                                 |
+| PaO2                            | 2        | 3022803    | LOINC      | Oxygen [Partial pressure] adjusted to patient's actual temperature in Arterial blood (temperature adjusted) | 19255-9      | [ABG PaO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=152)                                 |
+| FiO2                            |          | 4353936    | SNOMED     | Inspired oxygen concentration                                                                               | 250774007    | [FiO2](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=301)                                     |
+|---------------------------------|----------|------------|------------|-------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
+| PEEP                            | 1        | 42527140   | LOINC      | Total PEEP Respiratory system (total, measured)                                                             | 76247-6      | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318)                                     |
+| PEEP                            | 2        | 4216746    | SNOMED     | Positive end expiratory pressure setting                                                                    | 416595007    | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318)                                     |
+| PEEP                            | 3        | 4353713    | SNOMED     | Positive end expiratory pressure (general, no information about setting/measurement)                        | 250854009    | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318)                                     |
+| PEEP                            | 4        | 3022875    | LOINC      | Positive end expiratory pressure setting Ventilator                                                         | 20077-4      | [PEEP](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=318)                                     |
+|---------------------------------|----------|------------|------------|-------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
+| Pplat                           |          | 44782825   | SNOMED     | Airway plateau pressure                                                                                     | 698822002    | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+| Pplat                           |          | 3006369    | LOINC      | Airway pressure --at zero inspiratory flow on ventilator                                                    | 20060-0      | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+| Pplat                           |          | 3012810    | LOINC      | Airway pressure by Airway pressure monitor --at zero inspiratory flow on ventilator                         | 20059-2      | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+| Pplat                           |          | 21490565   | LOINC      | Dynamic plateau pressure                                                                                    | 60802-6      | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+| Pplat                           |          | 36304439   | LOINC      | Pressure.plateau Respiratory system airway                                                                  | 60829-9      | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+| Pplat                           |          | 36303946   | LOINC      | Pressure.plateau Respiratory system airway --on ventilator                                                  | 76259-1      | [Plateau pressure](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=320)                         |
+|---------------------------------|----------|------------|------------|-------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------|
+| VT                              | 1        | 44782826   | SNOMED     | Inspiratory tidal volume                                                                                    | 698823007    | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322)                             |
+| VT                              | 2        | 4108448    | SNOMED     | Spontaneous tidal volume                                                                                    | 250816009    | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322)                             |
+| VT                              | 3        | 3012410    | LOINC      | Tidal volume setting Ventilator                                                                             | 20112-9      | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322)                             |
+| VT                              | 4        | 4029625    | SNOMED     | Tidal volume (general, no information about setting/measurement)                                            | 13621006     | [Tidal volume](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=322)                             |
 
 
 ## Guidance
@@ -232,7 +200,7 @@ recommended PEEP:
 
 ```
 All critically ill patients that are 18 years or older
-    AND ventilation mode IN (VCV OR PCV from ventilation-modes.md)
+    AND are mechanically ventilated
     AND are intubated
     AND (an ARDS is diagnosed
          OR PaO2/FiO2 < 200 mmHg)
@@ -240,8 +208,8 @@ during the observation period.
 ```
 
 Notes:
-* (ventilation mode IN (VCV OR PCV)) is false if no mechanical ventilation is performed.
-* When the initial population criterion is evaluated for a time `t`, the calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints. Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
+* When the initial population criterion is evaluated for a time `t`, the calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints.
+  Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
   * At time `t_p`, the patient has to be ventilated and intubated as defined above
   * For the selected PaO2 measurement `t_p ≤ t` and `t - t_p` is minimal among all PaO2 measurements
   * For the selected FiO2 measurement `t_f ≤ t` and `t - t_f` is minimal among all FiO2 measurements which also fulfill the next condition
