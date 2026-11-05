@@ -78,7 +78,7 @@ It is reached if the intaken calories are 10 % less or more than the target.
 | IBW                                 | 4062985    | SNOMED     | Ideal body weight                                      | 170804003    | [Ideal body weight](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=284)                   |
 | Energy requirement                  | 4022415    | SNOMED     | Energy requirement                                     | 226244007    | [Energy requirement](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=287)                  |
 | Carbon dioxide production           | 21490580   | LOINC      | Carbon dioxide production (VCO2) in Respiratory system | 60825-7      | [Carbon dioxide production](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=311)           |
-| Contraindication to enteral feeding | 4141768    | SNOMED     | Medical contraindication to procedure                  | 266757004    | [Contraindication to enteral feeding](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=285) |
+| Contraindication to feeding         | 2100000009 | INDICATE   | Contraindication to feeding                            | contraindication-to-feeding | [Contraindication to feeding](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=285) |
 | Calorie intake total 24 hour        | 3026267    | LOINC      | Calorie intake total 24 hour                           | 9057-1       | [Energy intake](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=286)                       |
 | Renal replacement therapy           | 37018292   | SNOMED     | Continuous renal replacement therapy, incl. all SNOMED descendants (CVVH, CVVHD, CVVHDF, CAVH, CAVHD, CAVHDF, continuous hemodialysis/hemofiltration/hemodiafiltration) | 714749008    | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298)           |
 | Renal replacement therapy           | 4120120    | SNOMED     | Hemodialysis                                           | 302497006    | [Renal replacement therapy](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=298)           |
@@ -238,7 +238,7 @@ Number of 24 hour periods.
 First incomplete 6:00 to 5:59 period and first day (first complete 6:00 to 5:59
 period) and incomplete last period.
 OR
-Contraindication to enteral feeding
+Contraindication to feeding
 
 ## Expected
 
