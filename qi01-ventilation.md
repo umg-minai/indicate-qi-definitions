@@ -273,6 +273,15 @@ IF ALL(
 )
 ```
 
+Notes:
+* Let `t` be the time of the PEEP measurement
+  * Let `t_p` be the time of Pplat measurement used in the calculation
+    * The following conditions must hold: `(t - 2 hours) ≤ t_p ≤ t` and `t - t_p` is minimal among all such Plat measurements
+    * If no such Pplat measurement exists, the whole observation (`IF ALL(…)`) contributes `0` to the `COUNT`
+  * Let `t_t` be the time of the tidal volume measurement used in the calculation
+    * The following conditions must hold: `(t - 2 hours) ≤ t_t ≤ t` and `t - t_t` is minimal among all such tidal volume measurements
+    * If no such tidal volume measurement exists, the whole observation (`IF ALL(…)`) contributes `0` to the `COUNT`
+
 ## Numerator Exclusion
 
 None.
