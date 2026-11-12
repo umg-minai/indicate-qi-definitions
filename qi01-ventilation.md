@@ -245,6 +245,9 @@ during the observation period.
 ```
 
 Notes:
+* Intubation procedures that are recorded without an end time should be treated as occurring at a point in time given by the start time (the start time is mandatory according to OMOP CDM documentation). Accordingly, intubation procedures that are recorded with identical start and end times are acceptable.
+* If there is no subsequent extubation procedure for a given intubation procedure, the intubated period should end at the start of the next intubation procedure, if any.
+* An intubation procedure not followed by either an extubation procedure or another intubation procedure results in an unbounded intubated period so that the "intubated" criterion of the initial population is fulfilled from that point in time onward.
 * When the initial population criterion is evaluated for a time `t`, the calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints.
   Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
   * At time `t_p`, the patient has to be ventilated and intubated as defined above
