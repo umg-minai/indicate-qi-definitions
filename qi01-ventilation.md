@@ -248,12 +248,18 @@ Notes:
 * Intubation procedures that are recorded without an end time should be treated as occurring at a point in time given by the start time (the start time is mandatory according to OMOP CDM documentation). Accordingly, intubation procedures that are recorded with identical start and end times are acceptable.
 * If there is no subsequent extubation procedure for a given intubation procedure, the intubated period should end at the start of the next intubation procedure, if any.
 * An intubation procedure not followed by either an extubation procedure or another intubation procedure results in an unbounded intubated period so that the "intubated" criterion of the initial population is fulfilled from that point in time onward.
-* When the initial population criterion is evaluated for a time `t`, the calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints.
-  Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
-  * At time `t_p`, the patient has to be ventilated and intubated as defined above
-  * For the selected PaO2 measurement `t_p ≤ t` and `t - t_p` is minimal among all PaO2 measurements
-  * For the selected FiO2 measurement `t_f ≤ t` and `t - t_f` is minimal among all FiO2 measurements which also fulfill the next condition
-  * `(t_p - 60 min) ≤ t_f ≤ t_p`
+* When the initial population criterion is evaluated for a time `t`,
+  * Any ARDS diagnoses are subject to the following constraints
+    Let `t_as` be the recorded start time of an ARDS diagnosis which is considered for the criterion
+    * If the diagnosis is recorded without an end time `t_ae` or the end time is the same as `t_as`, `t_ae` is assumed to be the end of the visit (observation period)
+    * `t_as ≤ t ≤ t_ae` has to hold
+    * At some point in time between `t_as` and `t_ae`, the patient has to be ventilated and intubated as defined above
+  * The calculation of the PaO2/FiO2 fraction from PaO2 and FiO2 measurements is subject to several constraints.
+    Let `t_p` be the time of the PaO2 measurement used in the calculation and let `t_f` be the time of the FiO2 measurement used in the calculation, the following conditions must hold
+    * At time `t_p`, the patient has to be ventilated and intubated as defined above
+    * For the selected PaO2 measurement `t_p ≤ t` and `t - t_p` is minimal among all PaO2 measurements
+    * For the selected FiO2 measurement `t_f ≤ t` and `t - t_f` is minimal among all FiO2 measurements which also fulfill the next condition
+    * `(t_p - 60 min) ≤ t_f ≤ t_p`
 
 ## Numerator
 
