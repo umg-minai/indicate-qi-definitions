@@ -94,6 +94,17 @@ the CRBSI incidence and VAP incidence.
 | VAP | 259992 | SNOMED | Ventilator associated pneumonia | 429271009 | [Ventilator-associated pneumonia](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=32) |
 
 
+<!-- inject:Catheter infection|Ventilator-associated pneumonia|Central venous catheter|Invasive mechanical ventilation -->
+| Priority | Concept ID                                                       | Descendants | Vocabulary | Concept Name                             | Concept Code | DD Concept Set                                                                                                      |
+|---       |---                                                               |---          |---         |---                                       |---           |---                                                                                                                  |
+|          | [43021283](https://athena.ohdsi.org/search-terms/terms/43021283) | yes         | SNOMED     | Infection associated with vascular devi… | 473083009    | [Catheter infection (31)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=31) v1.2.0                |
+|---       |---                                                               |---          |---         |---                                       |---           |---                                                                                                                  |
+|          | [259992](https://athena.ohdsi.org/search-terms/terms/259992)     | no          | SNOMED     | Ventilator associated pneumonia          | 429271009    | [Ventilator-associated pneumonia (32)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=32) v1.1.0   |
+|---       |---                                                               |---          |---         |---                                       |---           |---                                                                                                                  |
+|          | [4179206](https://athena.ohdsi.org/search-terms/terms/4179206)   | yes         | SNOMED     | Central venous catheter                  | 52124006     | [Central venous catheter (291)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=291) v1.2.0         |
+|---       |---                                                               |---          |---         |---                                       |---           |---                                                                                                                  |
+|          | [37158404](https://athena.ohdsi.org/search-terms/terms/37158404) | no          | SNOMED     | Invasive mechanical ventilation          | 1258985005   | [Invasive mechanical ventilation (306)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=306) v1.1.0 |
+
 ## Guidance
 
 To determine the number of days on a ventilator or days of a CVC we use

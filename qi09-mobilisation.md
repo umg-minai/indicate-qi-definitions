@@ -70,6 +70,22 @@ A day starts at 6:00 and ends at 22:00.
 
 
 
+<!-- inject:Mobilization|Order not to mobilize -->
+| Priority | Concept ID                                                       | Descendants | Vocabulary | Concept Name                            | Concept Code          | DD Concept Set                                                                                            |
+|---       |---                                                               |---          |---         |---                                      |---                    |---                                                                                                        |
+|          | [4158838](https://athena.ohdsi.org/search-terms/terms/4158838)   | no          | SNOMED     | Ambulation therapy                      | 370871008             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [1242274](https://athena.ohdsi.org/search-terms/terms/1242274)   | no          | SNOMED     | Assistance with getting out of bed      | 12101000202101        | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [46272439](https://athena.ohdsi.org/search-terms/terms/46272439) | no          | SNOMED     | Assistance with mobility                | 710803000             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [37016972](https://athena.ohdsi.org/search-terms/terms/37016972) | no          | SNOMED     | Assistance with mobility in bed         | 713138001             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [46272440](https://athena.ohdsi.org/search-terms/terms/46272440) | no          | SNOMED     | Assistance with walking using device    | 710804006             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [46272565](https://athena.ohdsi.org/search-terms/terms/46272565) | no          | SNOMED     | Progressive mobility                    | 710950005             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [46271859](https://athena.ohdsi.org/search-terms/terms/46271859) | no          | SNOMED     | Promotion of physical mobility          | 710122006             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [46271857](https://athena.ohdsi.org/search-terms/terms/46271857) | no          | SNOMED     | Promotion of walking using mobility aid | 710120003             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [4204159](https://athena.ohdsi.org/search-terms/terms/4204159)   | no          | SNOMED     | Walking practice                        | 308931006             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|          | [4040262](https://athena.ohdsi.org/search-terms/terms/4040262)   | no          | SNOMED     | Walking with patient - mobilization     | 229595009             | [Mobilization (294)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=294) v1.1.0          |
+|---       |---                                                               |---          |---         |---                                      |---                    |---                                                                                                        |
+|          | 2100000008                                                       | no          | INDICATE   | Order not to mobilize                   | order-not-to-mobilize | [Order not to mobilize (295)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=295) v1.0.0 |
+
 ## Initial Population
 
 All critically ill patients that are 18 years or older

@@ -65,6 +65,18 @@ None.
 | Decision authority documented          | 45877806   | LOINC      | The patient has designated a decision-maker … | LA11786-3        | [Decision authority documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=342) |
 | Decision authority documented          | 762209     | SNOMED     | Active healthcare surrogate                   | 3021000175108    | [Surrogate decision maker documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=290) |
 
+<!-- inject:Advance care plan agreed|Consultation with patient|Surrogate decision maker documented -->
+| Priority | Concept ID                                                       | Descendants | Vocabulary | Concept Name                           | Concept Code     | DD Concept Set                                                                                                         |
+|---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
+|          | [36685263](https://athena.ohdsi.org/search-terms/terms/36685263) | no          | SNOMED     | Advance care plan agreed               | 1095851000000100 | [Advance care plan agreed (288)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=288) v1.1.0           |
+|---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
+|          | [37164964](https://athena.ohdsi.org/search-terms/terms/37164964) | no          | SNOMED     | Consultation with patient              | 1237136005       | [Consultation with patient (289)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289) v1.2.0          |
+|          | [4247376](https://athena.ohdsi.org/search-terms/terms/4247376)   | no          |            | Discussion about care plan with family |                  | Added by UMG                                                                                                           |
+|          | [37168078](https://athena.ohdsi.org/search-terms/terms/37168078) | no          | SNOMED     | Face to face consultation with patient | 1269515004       | [Consultation with patient (289)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289) v1.2.0          |
+|          | [4089048](https://athena.ohdsi.org/search-terms/terms/4089048)   | no          | SNOMED     | New patient consultation               | 185387006        | [Consultation with patient (289)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289) v1.2.0          |
+|---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
+|          | [762209](https://athena.ohdsi.org/search-terms/terms/762209)     | no          | SNOMED     | Active healthcare surrogate            | 3021000175108    | [Surrogate decision maker document… (290)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=290) v1.1.0 |
+
 ## Initial Population
 
 All critically ill patients that are 18 years or older
