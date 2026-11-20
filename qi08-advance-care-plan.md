@@ -65,7 +65,7 @@ None.
 | Decision authority documented          | 45877806   | LOINC      | The patient has designated a decision-maker … | LA11786-3        | [Decision authority documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=342) |
 | Decision authority documented          | 762209     | SNOMED     | Active healthcare surrogate                   | 3021000175108    | [Surrogate decision maker documented](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=290) |
 
-<!-- inject:Advance care plan agreed|Consultation with patient|Surrogate decision maker documented|[Deprecated] Decision authority documented -->
+<!-- inject:Advance care plan agreed|Consultation with patient|Surrogate decision maker documented -->
 | Priority | Concept ID                                                       | Descendants | Vocabulary | Concept Name                           | Concept Code     | DD Concept Set                                                                                                         |
 |---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
 |          | [36685263](https://athena.ohdsi.org/search-terms/terms/36685263) | no          | SNOMED     | Advance care plan agreed               | 1095851000000100 | [Advance care plan agreed (288)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=288) v1.1.0           |
@@ -76,8 +76,6 @@ None.
 |          | [4089048](https://athena.ohdsi.org/search-terms/terms/4089048)   | no          | SNOMED     | New patient consultation               | 185387006        | [Consultation with patient (289)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=289) v1.2.0          |
 |---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
 |          | [762209](https://athena.ohdsi.org/search-terms/terms/762209)     | no          | SNOMED     | Active healthcare surrogate            | 3021000175108    | [Surrogate decision maker document… (290)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=290) v1.1.0 |
-|---       |---                                                               |---          |---         |---                                     |---               |---                                                                                                                     |
-|          | [45877806](https://athena.ohdsi.org/search-terms/terms/45877806) | no          |            | Decision authority documented          |                  | Added by UMG                                                                                                           |
 
 ## Initial Population
 

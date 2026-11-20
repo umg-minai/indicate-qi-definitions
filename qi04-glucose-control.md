@@ -109,9 +109,8 @@ acceptable range or the next one is at least 20 % higher/lower
 | Glucose (moles/volume) | 3040151    | LOINC      | Glucose [Moles/volume] in Capillary blood               | 51596-5      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 | Glucose (moles/volume) | 46236948   | LOINC      | Glucose [Moles/volume] in Serum, Plasma or Blood        | 77135-2      | [Plasma glucose](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) |
 
-<!-- inject:[Deprecated] ABG glucose|Glucose in blood -->
+<!-- inject:Glucose in blood -->
 | Priority | Concept ID                                                       | Descendants | Vocabulary | Concept Name                               | Concept Code | DD Concept Set                                                                                       |
-|---       |---                                                               |---          |---         |---                                         |---           |---                                                                                                   |
 |---       |---                                                               |---          |---         |---                                         |---           |---                                                                                                   |
 |          | [3031266](https://athena.ohdsi.org/search-terms/terms/3031266)   | no          | LOINC      | Glucose \[Mass/volume\] in Arterial blood  | 41651-1      | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) v1.1.0 |
 |          | [1091312](https://athena.ohdsi.org/search-terms/terms/1091312)   | no          | LOINC      | Glucose \[Mass/volume\] in Arterial blood… | 104598-8     | [Glucose in blood (207)](https://indicate-eu.github.io/data-dictionary/#/concept-sets?id=207) v1.1.0 |
